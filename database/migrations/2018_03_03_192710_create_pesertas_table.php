@@ -25,13 +25,13 @@ class CreatePesertasTable extends Migration
             $table->integer('total_pembayaran')->default(0);
             $table->integer('kekurangan_pembayaran')->default(0);
             
-            $table->enum('web',['true','false'])->default('false')->nullable();
-            $table->enum('femdev',['true','false'])->default('false')->nullable();
-            $table->enum('mobile',['true','false'])->default('false')->nullable();
-            $table->enum('linux',['true','false'])->default('false')->nullable();
-            $table->enum('net',['true','false'])->default('false')->nullable();
-            $table->enum('inkscape',['true','false'])->default('false')->nullable();
-            $table->enum('godot',['true','false'])->default('false')->nullable();
+            $table->enum('web',['true','false','lunas'])->default('false')->nullable();
+            $table->enum('femdev',['true','false','lunas'])->default('false')->nullable();
+            $table->enum('mobile',['true','false','lunas'])->default('false')->nullable();
+            $table->enum('linux',['true','false','lunas'])->default('false')->nullable();
+            $table->enum('net',['true','false','lunas'])->default('false')->nullable();
+            $table->enum('inkscape',['true','false','lunas'])->default('false')->nullable();
+            $table->enum('godot',['true','false','lunas'])->default('false')->nullable();
 
             $table->timestamps();
         });
