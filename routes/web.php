@@ -16,18 +16,38 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::post('/gender','PesertaController@getGender');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group([
-    'middleware'=>['auth','admin']
+    'prefix'        => 'admin',
+    'middleware'    => ['auth','admin']
 ],function(){
-    Route::get('/admin', function(){
+    Route::get('/status', function(){
         return [
             'status' => 'admin'
         ];
     });
+    Route::get('/','DashboardController@index')->name('dashboard');
+
+    // tutup kelas
+    Route::get('/kelas/{nama_kelas}/ditutup','KelasController@tutupKelas')->name('tutup-kelas');
+    // buka kelas
+    Route::get('/kelas/{nama_kelas}/dibuka','KelasController@bukaKelas')->name('buka-kelas');
+    
+    
+    // pelunasan
+    Route::get(
+            '/r45ge5th4g6et4h6dvs4d1bvs51gb6sr5b62srb98s5r2b6sr5bs62bh5sr6t46h4dt6h/{peserta_id}/',
+            'PesertaController@pelunasan'
+        )->name('pelunasan');
 });
 
 Route::get('/daftar','PesertaController@getDaftar')->name('getDaftar');
 Route::post('/daftar','PesertaController@postDaftar')->name('postDaftar');
+
+// must admin
+Route::post('/peserta/{id}/bayar','PesertaController@pembayaran')->name('pembayaran');
+
+Route::get('/semua-kelas','KelasController@semuaKelas')->name('semua-kelas');
