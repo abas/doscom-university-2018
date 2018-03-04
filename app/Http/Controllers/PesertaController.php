@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Auth;
-use App\Peserta;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Validation\ValidatesRequests;
+use Auth;
+use App\Peserta;
+use App\Kelas;
 
 class PesertaController extends Controller
 {
@@ -26,7 +27,8 @@ class PesertaController extends Controller
      */
     public function getDaftar()
     {
-        return view('peserta.pendaftaran');
+        $kelas = Kelas::all();
+        return view('peserta.pendaftaran',compact('kelas'));
     }
 
     /**
@@ -50,6 +52,13 @@ class PesertaController extends Controller
             return redirect()->route('getDaftar')->with('iseng','kelas tidak boleh kosong');
         }
         // $peserta = new Peserta;
+        $tot_bayar = 0;
+        foreach ($kelas as $bayar) {
+            if($bayar == 'true'){
+                $tot_bayar += 35000;
+            }
+        }
+
         $peserta = Peserta::create([
             'nama'              => $req->nama,
             'email'             => $req->email,
@@ -62,20 +71,69 @@ class PesertaController extends Controller
             'linux'             => $req->linux == null ? 'false' : 'true',
             'net'               => $req->net == null ? 'false' : 'true',
             'inkscape'          => $req->inkscape == null ? 'false' : 'true',
-            'godot'             => $req->godot == null ? 'false' : 'true'
+            'godot'             => $req->godot == null ? 'false' : 'true',
+            'total_pembayaran'  => $tot_bayar,
+            'kekurangan_pembayaran' => $tot_bayar
         ]);
-
-        $tot_bayar = 0;
-        foreach ($kelas as $bayar) {
-            if($bayar == 'true'){
-                $tot_bayar += 35;
-            }
-        }
-
-        $peserta->total_pembayaran = $tot_bayar;
-        $peserta->kekurangan_pembayaran = $tot_bayar;
-
+    
+        
         if($peserta){
+            if($peserta->web == 'true'){
+                $web = Kelas::where('nama','web')->first();
+                $web->jumlah = $web->jumlah - 1;
+                if($web->jumlah == 0){
+                    $web->status = 'penuh';
+                }
+                $web->update();
+            }
+            if($peserta->femdev == 'true'){
+                $femdev = Kelas::where('nama','femdev')->first();
+                $femdev->jumlah = $femdev->jumlah - 1;
+                if($femdev->jumlah == 0){
+                    $femdev->status = 'penuh';
+                }
+                $femdev->update();
+            }
+            if($peserta->mobile == 'true'){
+                $mobile = Kelas::where('nama','mobile')->first();
+                $mobile->jumlah = $mobile->jumlah - 1;
+                if($mobile->jumlah == 0){
+                    $mobile->status = 'penuh';
+                }
+                $mobile->update();
+            }
+            if($peserta->linux == 'true'){
+                $linux = Kelas::where('nama','linux')->first();
+                $linux->jumlah = $linux->jumlah - 1;
+                if($linux->jumlah == 0){
+                    $linux->status = 'penuh';
+                }
+                $linux->update();
+            }
+            if($peserta->net == 'true'){
+                $net = Kelas::where('nama','net')->first();
+                $net->jumlah = $net->jumlah - 1;
+                if($net->jumlah == 0){
+                    $net->status = 'penuh';
+                }
+                $net->update();
+            }
+            if($peserta->inkscape == 'true'){
+                $inkscape = Kelas::where('nama','inkscape')->first();
+                $inkscape->jumlah = $inkscape->jumlah - 1;
+                if($inkscape->jumlah == 0){
+                    $inkscape->status = 'penuh';
+                }
+                $inkscape->update();
+            }
+            if($peserta->godot == 'true'){
+                $godot = Kelas::where('nama','godot')->first();
+                $godot->jumlah = $godot->jumlah - 1;
+                if($godot->jumlah == 0){
+                    $godot->status = 'penuh';
+                }
+                $godot->update();
+            }
             return redirect(route('getDaftar'))->with('success','register successfull');
         }return redirect(route('getDaftar'))->with('failed','failed to register');
         
