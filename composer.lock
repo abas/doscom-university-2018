@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "96098e473b028cdb2529580554a1ae3e",
+    "content-hash": "794c989563be675afc1bac9cfa25d273",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -54,7 +54,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1"
+                "php": ">=5.6"
             },
             "require-dev": {
                 "phpunit/phpunit": "^6.2"
@@ -150,6 +150,46 @@
                 "parser"
             ],
             "time": "2018-02-28T11:41:37+00:00"
+        },
+        {
+            "name": "gender-api/client",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/markus-perl/gender-api-client.git",
+                "reference": "988ca7e02aaa56fc8a6b8de83bb4a212247a6ccd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/markus-perl/gender-api-client/zipball/988ca7e02aaa56fc8a6b8de83bb4a212247a6ccd",
+                "reference": "988ca7e02aaa56fc8a6b8de83bb4a212247a6ccd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "GenderApi": "src",
+                    "GenderApiTest": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "An easy to use API client for Gender-API.com",
+            "homepage": "https://github.com/markus-perl/gender-api-client",
+            "keywords": [
+                "gender api",
+                "gender of names",
+                "genderize"
+            ],
+            "time": "2018-02-14T22:43:55+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -1125,7 +1165,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": ">=5.6"
             },
             "type": "library",
             "extra": {
@@ -1234,7 +1274,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": ">=5.6"
             },
             "conflict": {
                 "symfony/dependency-injection": "<3.4"
@@ -1733,7 +1773,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3",
+                "php": ">=5.6",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "conflict": {
@@ -1969,7 +2009,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1"
+                "php": ">=5.6"
             },
             "require-dev": {
                 "athletic/athletic": "~0.1.8",
@@ -3346,7 +3386,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": ">=5.6"
             },
             "conflict": {
                 "symfony/console": "<3.4"
