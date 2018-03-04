@@ -11,17 +11,17 @@
     @if(session('success'))
     <div class="alert alert-success" role="alert" id="alert-ragister">
         {{session('success')}} <p align="right" onclick="hide()" style="cursor:pointer"><b>X</b></p>
-        </p>
+        
     </div>
     @elseif(session('failed'))
     <div class="alert alert-danger" role="alert" id="alert-ragister">
         {{session('failed')}}  <p align="right" onclick="hide()" style="cursor:pointer"><b>X</b></p>
-        </p>
+        
     </div>
     @elseif(session('iseng'))
     <div class="alert alert-warning" role="alert" id="alert-ragister">
         {{session('iseng')}}  <p align="right" onclick="hide()" style="cursor:pointer"><b>X</b></p>
-        </p>
+        
     </div>
     @endif
 
@@ -31,7 +31,7 @@
             divId.style.display = "none";
         }
     </script>
-
+    <br><br>
     <form class="form-horizontal" action="{{route('postDaftar')}}" method="post">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <div class="form-group">
