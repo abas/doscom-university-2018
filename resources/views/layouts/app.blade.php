@@ -9,10 +9,32 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>DOSCOM | DU 2018</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/main.css" rel="stylesheet">
+    <!-- Bootstrap Material Design -->
+    <link href="assetmaterial/css/bootstrap-material-design.min.css" rel="stylesheet">
+    <!-- <link href="assetmaterial/css/style.css" rel="stylesheet"> -->
+    <link href="assetmaterial/css/ripples.min.css" rel="stylesheet">
+    <!--  iamge picker-->
+    <link href="css/image-picker.css" rel="stylesheet">
+    <style media="screen">
+        .image_picker_selector p {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .selected p {
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
@@ -87,8 +109,17 @@
     </div>
     </div>
 
+    <!-- script onload -->
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+
+
 </body>
 
 </html>
