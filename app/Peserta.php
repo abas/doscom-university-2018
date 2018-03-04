@@ -23,4 +23,49 @@ class Peserta extends Model
             }
         }return $ans;
     }
+
+    public static function getGender($fullname)
+    {
+        try {
+            $apiClient = new GenderApiClient(env('GENDER_APP_KEY'));
+            $name = $apiClient->getByFirstNameAndLastName($fullname);
+        
+            if ($name->genderFound()) {
+                echo $name->getGender(); // will return "female" (possible values: male, female, unknown)
+            }
+        
+        } catch (GenderApi\Exception $e) {
+            echo 'Exception: ' . $e->getMessage();
+        }
+    }
+
+    public static function isFemale($gender)
+    {
+        if($gender == 'female'){
+            return true;
+        }return false;
+    }
+
+    public static function getKelas($peserta_id)
+    {
+        $data = Peserta::find($peserta_id);
+        $kelas = [
+            $data->web      == 'true' ? 'Web' : null,
+            $data->femdev   == 'true' ? 'FemaleDev' : null,
+            $data->mobile   == 'true' ? 'Mobile' : null,
+            $data->linux    == 'true' ? 'Linux' : null,
+            $data->net      == 'true' ? 'Network' : null,
+            $data->inkscape == 'true' ? 'Inkscape' : null,
+            $data->godot    == 'true' ? 'Godot' : null,
+        ];
+        $result = [];
+        foreach ($kelas as $key) {
+            # code...
+            if($key != null){
+                array_push($result,$key);
+            }
+        }
+        return $result;
+
+    }
 }
