@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Validation\ValidatesRequests;
+use GenderApi\Client as GenderApiClient;
 use Auth;
 use App\Peserta;
 use App\Kelas;
@@ -24,6 +25,8 @@ class PesertaController extends Controller
     
     /**
      * form pendaftaran peserta
+     * 
+     * middlerware @var Guest
      */
     public function getDaftar()
     {
@@ -33,9 +36,11 @@ class PesertaController extends Controller
 
     /**
      * save data pendaftaran peserta
+     * 
+     * middleware @var Guest
      */
     public function postDaftar(Request $req)
-    {
+    {   
         $kelas = [
             $req->web == null ? 'false' : 'true',
             $req->femdev== null ? 'false' : 'true',
@@ -137,5 +142,44 @@ class PesertaController extends Controller
             return redirect(route('getDaftar'))->with('success','register successfull');
         }return redirect(route('getDaftar'))->with('failed','failed to register');
         
+    }
+
+    /**
+     * fungsi untuk mengurangi total pembayaran 
+     * 
+     * middleware @var Auth&&Admin
+     */
+    public function pembayaran(Request $req,$id_peserta)
+    {
+        $peserta = Peserta::find($id_peserta);
+        // input dari pembayaran
+        $bayar = $req->peserta_bayar;
+        // eksekusi pembayaran
+        if($peserta->kekurangan_pembayaran < $bayar){
+            return ['err'=>'input tidak valid! *pembayaran tidak boleh lebih besar dari total yang harus di bayar'];    
+        }
+        $peserta->kekurangan_pembayaran = $peserta->kekurangan_pembayaran - $bayar;
+        // cek apakah sudah terbayar lunas ?
+        if($peserta->kekurangan_pembayaran == 0) {
+            $peserta->status_pembayaran = 'lunas';
+        }
+
+        
+        if($peserta->update()){
+            return $peserta;
+        }return [
+            'err' => 'failed to update'
+        ];
+    }
+
+    public function pelunasan($peserta_id)
+    {
+        # code...
+        $peserta = Peserta::find($peserta_id);
+        $peserta->status_pembayaran = 'lunas';
+        $peserta->kekurangan_pembayaran = 0;
+        if($peserta->update()){
+            return $peserta;
+        }return ['err'=>'failed to update'];
     }
 }
