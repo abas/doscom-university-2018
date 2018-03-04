@@ -65,53 +65,95 @@
             </label>
             <br>
 
-            <div class="checkbox ">
+            <div class="checkbox 
+            @if($kelas[0]->status=='penuh')
+                disabled
+            @endif">
                 <label class="bmd-label-floating">
-                    <input name="web" type="checkbox" value="join"> Web Programming
+                    <input name="web" type="checkbox" value="join" 
+                    @if($kelas[0]->status=='penuh')
+                        disabled title="kelas penuh"
+                    @endif> Web Programming
                 </label>
             </div>
 
-            <div class="checkbox ">
+            <div class="checkbox 
+            @if($kelas[1]->status=='penuh')
+                disabled
+            @endif">
                 <label class="bmd-label-floating">
-                    <input name="femdev" type="checkbox" value="join"> Female Dev
+                    <input name="femdev" type="checkbox" value="join"
+                    @if($kelas[1]->status=='penuh')
+                        disabled title="kelas penuh"
+                    @endif> Female Dev
                 </label>
             </div>
 
-            <div class="checkbox ">
+            <div class="checkbox 
+            @if($kelas[2]->status=='penuh')
+                disabled
+            @endif">
                 <label class="bmd-label-floating">
-                    <input name="mobile" type="checkbox" value="join"> Mobile Programming
+                    <input name="mobile" type="checkbox" value="join"
+                    @if($kelas[2]->status=='penuh')
+                        disabled title="kelas penuh"
+                    @endif> Mobile Programming
                 </label>
             </div>
 
-            <div class="checkbox ">
+            <div class="checkbox 
+            @if($kelas[3]->status=='penuh')
+                disabled
+            @endif">
                 <label class="bmd-label-floating">
-                    <input name="linux" type="checkbox" value="join"> Linux Fundamental
+                    <input name="linux" type="checkbox" value="join"
+                    @if($kelas[3]->status=='penuh')
+                        disabled title="kelas penuh"
+                    @endif> Linux Fundamental
                 </label>
             </div>
 
-            <div class="checkbox ">
+            <div class="checkbox 
+            @if($kelas[4]->status=='penuh')
+                disabled
+            @endif">
                 <label class="bmd-label-floating">
-                    <input name="net" type="checkbox" value="join"> Jaringan Komputer
+                    <input name="net" type="checkbox" value="join"
+                    @if($kelas[4]->status=='penuh')
+                        disabled title="kelas penuh"
+                    @endif> Jaringan Komputer
                 </label>
             </div>
 
-            <div class="checkbox ">
+            <div class="checkbox 
+            @if($kelas[5]->status=='penuh')
+                disabled
+            @endif">
                 <label class="bmd-label-floating">
-                    <input name="inkscape" type="checkbox" value="join"> Inkscape
+                    <input name="inkscape" type="checkbox" value="join"
+                    @if($kelas[5]->status=='penuh')
+                        disabled title="kelas penuh"
+                    @endif> Inkscape
                 </label>
             </div>
 
-            <div class="checkbox ">
+            <div class="checkbox 
+            @if($kelas[6]->status=='penuh')
+                disabled
+            @endif">
                 <label class="bmd-label-floating">
-                    <input name="godot" type="checkbox" value="join"> Godot Game Engine
+                    <input name="godot" type="checkbox" value="join"
+                    @if($kelas[6]->status=='penuh')
+                        disabled title="kelas penuh"
+                    @endif> Godot Game Engine
                 </label>
             </div>
             <br>
             <div class="panel-footer">
                 <i>Note:</i>
                 <br> - boleh join lebih dari 1 kelas
-                <br> -
-                <b>Female Dev</b> hanya untuk peserta perempuan
+                <br> - <b>Female Dev</b> hanya untuk peserta perempuan
+                <br> - kelas yang <b>tidak bisa dipilih</b> berarti kelas tersebut telah <b>penuh</b>
             </div>
         </div>
 
@@ -123,6 +165,7 @@
         <span class="bmd-form-group">
             <!-- needed to match padding for floating labels -->
             <button type="submit" class="btn btn-info btn-raised">Submit</button>
+            <a href="{{url('/')}}" class="btn btn-success btn-raised">Home</a>
         </span>
     </form>
 
