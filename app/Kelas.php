@@ -10,4 +10,12 @@ class Kelas extends Model
     protected $fillable = [
         'kelas','status'
     ];
+
+    public static function isFull($id)
+    {
+        $jumlah = $this::find($id)->jumlah;
+        if($jumlah == 0){
+            return true;
+        }return false;
+    }
 }
