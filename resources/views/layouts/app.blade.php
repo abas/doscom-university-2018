@@ -41,7 +41,7 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
+        <nav class="navbar navbar-default navbar-static-top well-info" style="background-color:#03a9f4">
             <div class="container">
                 <div class="navbar-header">
 
@@ -104,12 +104,12 @@
     </div>
     @yield('content')
 
-    <div class="col-md-8 col-md-offset-4">
+    <div class="col-md-8 col-md-offset-3">
         <p>Copyright &copy; 2015 |
-            <a href="http://www.doscom.org/university">Doscom University</a>
+            <a href="http://du.doscom.org" style="text-decoration:none;color:#03a9f4;font-weight:bold">Doscom University</a>
         </p>
     </div>
-    </div>
+
 
     <!-- script onload -->
     <script>
