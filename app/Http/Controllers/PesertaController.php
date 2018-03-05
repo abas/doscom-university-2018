@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Foundation\Bus\DispatchesJobs;
-use Illuminate\Contracts\Validation\Validator;
-use Illuminate\Foundation\Validation\ValidatesRequests;
-use GenderApi\Client as GenderApiClient;
+// use Illuminate\Foundation\Bus\DispatchesJobs;
+// use Illuminate\Contracts\Validation\Validator;
+// use Illuminate\Foundation\Validation\ValidatesRequests;
+// use GenderApi\Client as GenderApiClient;
 use Auth;
 use App\Peserta;
 use App\Kelas;
@@ -17,11 +17,12 @@ class PesertaController extends Controller
     /**
      * {@inheritdoc}
      */
+    /*
     protected function formatValidationErrors(Validator $validator)
     {
         return $validator->errors()->all();
     }
-    
+    */
     
     /**
      * form pendaftaran peserta
