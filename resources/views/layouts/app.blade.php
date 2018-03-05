@@ -13,18 +13,20 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    
+    <!-- material -->
+    <link href="{{ asset('assetmaterial/css/bootstrap-material-design.min.css') }}" rel="stylesheet">
+
+
     <!-- Material Design fonts -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Bootstrap -->
+<!--     
     <link href="asset/css/bootstrap.min.css" rel="stylesheet">
     <link href="asset/css/main.css" rel="stylesheet">
-    <!-- Bootstrap Material Design -->
     <link href="assetmaterial/css/bootstrap-material-design.min.css" rel="stylesheet">
-    <!-- <link href="assetmaterial/css/style.css" rel="stylesheet"> -->
     <link href="assetmaterial/css/ripples.min.css" rel="stylesheet">
-    <!--  iamge picker-->
-    <link href="css/image-picker.css" rel="stylesheet">
+    <link href="css/image-picker.css" rel="stylesheet"> -->
     <style media="screen">
         .image_picker_selector p {
             text-align: center;
@@ -98,8 +100,8 @@
                 </div>
 
             </div>
+        </nav>
     </div>
-    </nav>
     @yield('content')
 
     <div class="col-md-8 col-md-offset-4">
