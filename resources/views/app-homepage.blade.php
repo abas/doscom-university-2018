@@ -1301,12 +1301,12 @@
                     <h3 class="wow fadeInDown delay-03s">Rizki Mufti Ilmawan</h3>
                     <span class="wow fadeInDown delay-03s">Instruktur Web Programming</span>
                 </div>
-                <div class="team-leader-box">
+                <div class="team-leader-box clearfix">
                     <div class="team-leader  wow fadeInDown delay-06s">
                         <div class="team-leader-shadow">
                             <a href="#"></a>
                         </div>
-                        <img src="{{ asset('images/farah.jpg')}}" height="280px" alt="">
+                        <img src="{{ asset('images/farah.jpg')}}" width="300px" alt="">
                         <ul>
                             <li>
                                 <a href="#" class="fa fa-twitter"></a>
@@ -1328,7 +1328,7 @@
                         <div class="team-leader-shadow">
                             <a href="#"></a>
                         </div>
-                        <img src="http://localhost/doscom-university-2018/public/images/afti.jpeg" height="280px" alt="">
+                        <img src="{{asset('images/afti.jpeg')}}" width="300px" alt="">
                         <ul>
                             <li>
                                 <a href="#" class="fa fa-twitter"></a>
@@ -1351,7 +1351,7 @@
                         <div class="team-leader-shadow">
                             <a href="#"></a>
                         </div>
-                        <img src="{{ asset('images/okta.jpeg')}}" height="280px" alt="">
+                        <img src="{{ asset('images/okta.jpeg')}}" width="300px" alt="">
                         <ul>
                             <li>
                                 <a href="#" class="fa fa-twitter"></a>
@@ -1426,7 +1426,7 @@
                             <div class="team-leader-shadow">
                                 <a href="#"></a>
                             </div>
-                            <img src="{{ asset('images/reno.png')}}" height="280px" width="900px" alt="">
+                            <img src="{{ asset('images/reno.png')}}" width="300px" alt="">
                             <ul>
                                 <li>
                                     <a href="#" class="fa fa-twitter"></a>
@@ -1469,7 +1469,7 @@
         <section class="main-section contact" id="contact">
 
             <div class="row">
-                <div class="col-lg-6 col-sm-7 wow fadeInLeft">
+                <div class="col-lg-6 col-sm-12 wow fadeInLeft">
                     <div class="contact-info-box address clearfix">
                         <h3>
                             <i class=""></i>Address:</h3>
@@ -1493,130 +1493,131 @@
 						<h3><i class="fa-clock-o"></i>Hours:</h3>
 						<span><strong>Monday - Thursday:</strong> 10am - 6pm<br><strong>Friday:</strong> 1pm - 6pm<br><strong>Saturday - Sunday:</strong> Closed</span>
 					</div> -->
-                    <center>
+                    <center style="margin:40px">
                         <a href="https://facebook.com/doscomedia" class="fa fa-facebook"></a>
                         <a href="https://twitter.com/doscomedia" class="fa fa-twitter"></a>
                         <a href="https://instagram.com/doscomedia" class="fa fa-instagram"></a>
                         <center>
                 </div>
-                <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.51506429899533!2d110.40929010353575!3d-6.980860011903814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4c1c405183%3A0x3943842b992e87fb!2sCafetaria+udinus!5e0!3m2!1sid!2sid!4v1518617683734"
-                        width="550" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="col-lg-6 col-md-6 col-sm-12 wow fadeInUp delay-05s">
+                    <iframe width="100%" height="350px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.51506429899533!2d110.40929010353575!3d-6.980860011903814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4c1c405183%3A0x3943842b992e87fb!2sCafetaria+udinus!5e0!3m2!1sid!2sid!4v1518617683734"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
-        </section>
-        </div>
-
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-logo">
-                    <a href="#">
-                        <img src="{{ asset('images/logo-doscom.png')}}" alt="">
-                    </a>
-                </div>
-                <span class="copyright">&copy;Doscom University. All Rights Reserved</span>
-
             </div>
-            <br>
+        </section>
+    </div>
 
-        </footer>
+    <footer class="footer" style="width:100%">
+        <div class="container">
+            <div class="footer-logo">
+                <a href="#">
+                    <img src="{{ asset('images/logo-doscom.png')}}" alt="">
+                </a>
+            </div>
+            <span class="copyright">&copy;Doscom University. All Rights Reserved</span>
+
+        </div>
+        <br>
+
+    </footer>
 
 
-        <script type="text/javascript">
-            $(document).ready(function (e) {
-                $('#test').scrollToFixed();
-                $('.res-nav_click').click(function () {
-                    $('.main-nav').slideToggle();
-                    return false
-
-                });
+    <script type="text/javascript">
+        $(document).ready(function (e) {
+            $('#test').scrollToFixed();
+            $('.res-nav_click').click(function () {
+                $('.main-nav').slideToggle();
+                return false
 
             });
-        </script>
 
-        <script>
-            wow = new WOW({
-                animateClass: 'animated',
-                offset: 100
+        });
+    </script>
+
+    <script>
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100
+        });
+        wow.init();
+    </script>
+
+
+    <script type="text/javascript">
+        $(window).load(function () {
+
+            $('.main-nav li a, .servicelink').bind('click', function (event) {
+                var $anchor = $(this);
+
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top - 102
+                }, 1500, 'easeInOutExpo');
+                /*
+                if you don't want to use the easing effects:
+                $('html, body').stop().animate({
+                	scrollTop: $($anchor.attr('href')).offset().top
+                }, 1000);
+                */
+                if ($(window).width() < 768) {
+                    $('.main-nav').hide();
+                }
+                event.preventDefault();
             });
-            wow.init();
-        </script>
+        })
+    </script>
+
+    <script type="text/javascript">
+        $(window).load(function () {
 
 
-        <script type="text/javascript">
-            $(window).load(function () {
-
-                $('.main-nav li a, .servicelink').bind('click', function (event) {
-                    var $anchor = $(this);
-
-                    $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top - 102
-                    }, 1500, 'easeInOutExpo');
-                    /*
-                    if you don't want to use the easing effects:
-                    $('html, body').stop().animate({
-                    	scrollTop: $($anchor.attr('href')).offset().top
-                    }, 1000);
-                    */
-                    if ($(window).width() < 768) {
-                        $('.main-nav').hide();
-                    }
-                    event.preventDefault();
-                });
-            })
-        </script>
-
-        <script type="text/javascript">
-            $(window).load(function () {
+            var $container = $('.portfolioContainer'),
+                $body = $('body'),
+                colW = 375,
+                columns = null;
 
 
-                var $container = $('.portfolioContainer'),
-                    $body = $('body'),
-                    colW = 375,
-                    columns = null;
+            $container.isotope({
+                // disable window resizing
+                resizable: true,
+                masonry: {
+                    columnWidth: colW
+                }
+            });
 
+            $(window).smartresize(function () {
+                // check if columns has changed
+                var currentColumns = Math.floor(($body.width() - 30) / colW);
+                if (currentColumns !== columns) {
+                    // set new column count
+                    columns = currentColumns;
+                    // apply width to container manually, then trigger relayout
+                    $container.width(columns * colW)
+                        .isotope('reLayout');
+                }
 
+            }).smartresize(); // trigger resize to set container width
+            $('.portfolioFilter a').click(function () {
+                $('.portfolioFilter .current').removeClass('current');
+                $(this).addClass('current');
+
+                var selector = $(this).attr('data-filter');
                 $container.isotope({
-                    // disable window resizing
-                    resizable: true,
-                    masonry: {
-                        columnWidth: colW
-                    }
+
+                    filter: selector,
                 });
-
-                $(window).smartresize(function () {
-                    // check if columns has changed
-                    var currentColumns = Math.floor(($body.width() - 30) / colW);
-                    if (currentColumns !== columns) {
-                        // set new column count
-                        columns = currentColumns;
-                        // apply width to container manually, then trigger relayout
-                        $container.width(columns * colW)
-                            .isotope('reLayout');
-                    }
-
-                }).smartresize(); // trigger resize to set container width
-                $('.portfolioFilter a').click(function () {
-                    $('.portfolioFilter .current').removeClass('current');
-                    $(this).addClass('current');
-
-                    var selector = $(this).attr('data-filter');
-                    $container.isotope({
-
-                        filter: selector,
-                    });
-                    return false;
-                });
-
+                return false;
             });
-        </script>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>
-            window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
-        </script>
+        });
+    </script>
 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-            crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
 
 </body>
 
