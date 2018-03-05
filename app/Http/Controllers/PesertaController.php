@@ -179,7 +179,8 @@ class PesertaController extends Controller
         $peserta->status_pembayaran = 'lunas';
         $peserta->kekurangan_pembayaran = 0;
         if($peserta->update()){
-            return $peserta;
+            // return $peserta;
+            return redirect()->back();
         }return ['err'=>'failed to update'];
     }
 }
