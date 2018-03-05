@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('app-homepage');
-});
+Route::get('/','HomeController@index')->name('root');
 
 Auth::routes();
 Route::post('/gender','PesertaController@getGender');
