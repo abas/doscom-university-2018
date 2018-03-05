@@ -820,15 +820,15 @@
     <section class="main-section" id="service">
         <!--main-section-start-->
         <div class="container">
-            <h2>Sisa Quota</h2>
+            <h2>Sisa Kuota</h2>
             <h6>kuota kelas tersedia</h6>
             <div class="row" style="text-align: center">
                 @foreach($kelas as $kls)
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="card" style="width:70%;margin:15%">
                         <div class="card-body">
-                            <div class="card-header text-primary">
-                                <h1 style="text-transform:capitalize">{{$kls->nama}}</h1>
+                            <div class="card-header">
+                                <h3 class=" text-primary" style="text-transform:capitalize;font-weight: bold">{{\App\Kelas::convKelas($kls->nama)}}</h3>
                             </div>
                             <h5 class="card-title">sisa kuota :</h5>
                             @if($kls->jumlah == 0 || $kls->status == 'penuh')
