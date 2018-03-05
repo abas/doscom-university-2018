@@ -80,7 +80,7 @@
                             </tr>
                         </tfoot>
                         <tbody>
-                            @foreach($peserta as $peserta)
+                            @if($peserta->count() > 0) @foreach($peserta as $peserta)
                             <tr id="@php $nametag=strtolower($peserta->nama); @endphp{{$nametag}}">
                                 <td>{{$peserta->nama}}</td>
                                 <td>{{$peserta->email}}</td>
@@ -115,7 +115,15 @@
                                     @endif @endforeach
                                 </td>
                             </tr>
-                            @endforeach
+                            @endforeach @else
+                            <tr>
+                                <td colspan="7">
+                                    <p class="alert" style="color:#FF0034" align="center">
+                                        Tidak Ada Data Ditemukan
+                                    </p>
+                                </td>
+                            </tr>
+                            @endif
                         </tbody>
                     </table>
                 </div>
