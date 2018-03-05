@@ -13,7 +13,7 @@ use App\Kelas;
 
 class PesertaController extends Controller
 {
-    use DispatchesJobs, ValidatesRequests;
+    // use DispatchesJobs, ValidatesRequests;
     /**
      * {@inheritdoc}
      */
