@@ -53,4 +53,17 @@ class Kelas extends Model
         ];
     }
 
+    public static function convKelas($kelas_nama)
+    {
+        
+        if($kelas_nama == 'web'      ) return 'Web Programming';
+        else if($kelas_nama == 'femdev'   ) return 'Female Dev';
+        else if($kelas_nama == 'mobile'   ) return 'Mobile Programming';
+        else if($kelas_nama == 'linux'    ) return 'Linux Fundamental';
+        else if($kelas_nama == 'net'      ) return 'Jaringan Komputer';
+        else if($kelas_nama == 'inkscape' ) return 'Multimedia Inkscape';
+        else if($kelas_nama == 'godot'    ) return 'Game Development';
+        else return "none";
+    }
+
 }
