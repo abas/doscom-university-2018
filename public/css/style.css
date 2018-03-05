@@ -99,8 +99,8 @@ p{
 	background:  url('../images/bg.png') center repeat fixed ;
 
 	 text-align:center;
-	padding:130px 0; 
-margin
+	padding:130px; 
+	margin:0;
 	
 }
 .logo{
@@ -784,7 +784,8 @@ border: 2px solid #fff;
 ---------------------------------*/
 
 .footer{
-	background:url(../images/bg.png) left top repeat;
+	/* background:url(../images/bg.png) left top repeat; */
+	background-color: #2682ed;
 	padding:35px 0 35px;
 }
 .footer-logo{
