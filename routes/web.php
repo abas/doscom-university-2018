@@ -29,7 +29,7 @@ Route::group([
             'status' => 'admin'
         ];
     });
-    Route::get('/','DashboardController@index')->name('dashboard');
+    Route::get('/v65sv87s5rd6vts7vr6s5fdv7sf5v67sdv765sd6v7','DashboardController@index')->name('dashboard')->name('dashboard');
 
     // tutup kelas
     Route::get('/kelas/{nama_kelas}/ditutup','KelasController@tutupKelas')->name('tutup-kelas');
