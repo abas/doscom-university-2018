@@ -66,6 +66,22 @@ class Peserta extends Model
             }
         }
         return $result;
-
+        // $kelas = [
+        //     $data->web      == 'true' ? 'Web' : $data->web == 'lunas' ? 'web' : null,
+        //     $data->femdev   == 'true' ? 'FemaleDev' : $data->femdev == 'lunas' ? 'femdev' : null,
+        //     $data->mobile   == 'true' ? 'Mobile' : $data->mobile == 'lunas' ? 'mobile' : null,
+        //     $data->linux    == 'true' ? 'Linux' : $data->linux == 'lunas' ? 'linux' : null,
+        //     $data->net      == 'true' ? 'Network' : $data->net == 'lunas' ? 'net' : null,
+        //     $data->inkscape == 'true' ? 'Inkscape' : $data->inkscape == 'lunas' ? 'inkscape' : null,
+        //     $data->godot    == 'true' ? 'Godot' : $data->godot == 'lunas' ? 'godot' : null,
+        // ];
+        // $result = [];
+        // foreach ($kelas as $key) {
+        //     # code...
+        //     if($key != null || $key == 'lunas'){
+        //         array_push($result,$key);
+        //     }
+        // }
+        // return $result;
     }
 }
