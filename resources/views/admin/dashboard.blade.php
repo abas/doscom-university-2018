@@ -35,6 +35,7 @@
                     <b>{{$kelas->jumlah}} peserta</b>
                 </div>
                 <div class="panel-footer" style="text-align:right">
+                    <a class="btn btn-sm btn-raised btn-info" href="{{route('detail-kelas',$kelas->nama)}}">detail</a>
                     @if($kelas->status == 'sisa')
                     <a href="{{route('tutup-kelas',$kelas->nama)}}" class="btn btn-sm btn-raised btn-danger">Tutup</a>
                     @elseif($kelas->status == 'penuh')
