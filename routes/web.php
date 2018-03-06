@@ -27,7 +27,11 @@ Route::group([
             'status' => 'admin'
         ];
     });
-    Route::get('/v65sv87s5rd6vts7vr6s5fdv7sf5v67sdv765sd6v7','DashboardController@index')->name('dashboard')->name('dashboard');
+    // dashboard
+    Route::get('/v65sv87s5rd6vts7vr6s5fdv7sf5v67sdv765sd6v7','DashboardController@index')->name('dashboard');
+
+    // kelas
+    Route::get('/ahr873yxcfb46tyc8264t28c4yn8ry8cryn7287r3d/{nama_kelas}','KelasController@show')->name('detail-kelas');
 
     // tutup kelas
     Route::get('/kelas/{nama_kelas}/ditutup','KelasController@tutupKelas')->name('tutup-kelas');
