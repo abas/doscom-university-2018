@@ -583,8 +583,7 @@
                     <img src="{{ asset('images/logo-doscom.png')}}" alt="">
                 </a>
             </figure>
-            <h1 class="animated fadeInDown delay-07s">
-                Doscom University
+            <h1 class="animated fadeInDown delay-07s"> Doscom University
                 <br>
             </h1>
             <ul class="we-create animated fadeInUp delay-1s">
