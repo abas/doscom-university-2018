@@ -93,6 +93,9 @@
                                         {{ csrf_field() }}
                                     </form>
                                 </li>
+                                <li>
+                                    <a href="{{route('dashboard')}}">Dasboard</a>
+                                </li>
                             </ul>
                         </li>
                         @endif
