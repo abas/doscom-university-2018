@@ -583,8 +583,7 @@
                     <img src="{{ asset('images/logo-doscom.png')}}" alt="">
                 </a>
             </figure>
-            <h1 class="animated fadeInDown delay-07s">
-                Doscom University
+            <h1 class="animated fadeInDown delay-07s"> Doscom University
                 <br>
             </h1>
             <ul class="we-create animated fadeInUp delay-1s">
@@ -676,8 +675,8 @@
         <div class="container">
             <div class="row">
                 <figure class="col-lg-5 col-sm-4 wow fadeInLeft">
-                    <img src="{{ asset('images/kelas.jpg')}}" width="420px" alt="">
-                    <img src="{{ asset('images/kelas2.jpg')}}" width="420px" alt="">
+                    <img src="{{ asset('images/kelas.jpg')}}" width="420px" alt=""> <br><br><br>
+                    <img src="{{ asset('images/kelas2.jpg')}}" width="420px" alt=""> <br><br><br>
                     <img src="{{ asset('images/Suasana-Doscom-University-Kelas-Web.jpg')}}" width="420px" alt="">
 
                 </figure>
@@ -864,60 +863,66 @@
                                 <th>Pemrograman Web</th>
                                 <th>Jaringan Komputer</th>
                                 <th>Multimedia Inkscape</th>
+                                <th>Female Dev</th>
+                                <th>Game Development</th>
                             </tr>
 
                         </thead>
                         <tbody>
                             <tr>
                                 <th>Hari / Waktu</th>
-                                <th>Senin /16:30-19:30</th>
-                                <th>Rabu / 16:30-19:30</th>
-                                <th>Senin / 16:30-19:30</th>
-                                <th>Selasa / 14:30-17:30</th>
-                                <th>Kamis / 14:30-17:30</th>
+                                <th>Sabtu , 12.30-15.00</th>  
+                                <th>Sabtu , 09.30-12:00</th>   
+                                <th>Sabtu , 12:30-15:00</th> 
+                                <th>Sabtu , 09:30-12:00</th> 
+                                <th>Sabtu , 09:30-12:00</th> 
+                                <th>Sabtu , 09:00-15:00</th> 
+                                <th>Sabtu , 12:30-15:00</th> 
+                               
+
+
                             </tr>
                             <tr>
                                 <th>Pertemuan 1</th>
-                                <td>20 Maret 2017</td>
-                                <td>22 Maret 2017</td>
-                                <td>20 Maret 2017</td>
-                                <td>21 Maret 2017</td>
-                                <td>23 Maret 2017</td>
+                                <td> 17 Maret 2018</td>
+                                <td> 17 Maret 2018</td>
+                                <td> 17 Maret 2018</td>
+                                <td> 17 Maret 2018</td>
+                                <td> 17 Maret 2018</td>
+                                <td> -</td>
+                                <td> 24 Maret 2018</td>
                             </tr>
                             <tr>
                                 <th>Pertemuan 2</th>
-                                <td>27 Maret 2017</td>
-                                <td>29 Maret 2017</td>
-                                <td>27 Maret 2017</td>
-                                <td>Jumat, 31 Maret 2017 (D.2.K) = 16.30 - 19.30</td>
-                                <td>30 Maret 2017</td>
-                            </tr>
+                                <td> 24 Maret 2018</td>
+                                <td> 24 Maret 2018</td>
+                                <td> 24 Maret 2018</td>
+                                <td> 24 Maret 2018</td>
+                                <td> 24 Maret 2018</td>
+                            
+                                <td>-</td>
+                                <td> 24 Maret 2018</td></tr>
                             <tr>
                                 <th>Pertemuan 3</th>
-                                <td>3 April 2017</td>
-                                <td>5 April 2017</td>
-                                <td>3 April 2017</td>
-                                <td>4 April 2017</td>
-                                <td>6 April 2017</td>
+                                <td> 7 April 2018</td>
+                                <td> 7 April 2018</td>
+                                <td> 7 April 2018</td>
+                                <td> 7 April 2018</td>
+                                <td> 7 April 2018</td>
+                                <td> 14 April 2018</td>
+                                <td> 7 April 2018</td>
 
                             </tr>
-                            <tr>
-                                <th>Pertemuan 4</th>
-                                <td>10 April 2017</td>
-                                <td>12 April 2017</td>
-                                <td>10 April 2017</td>
-                                <td>11 April 2017</td>
-                                <td>13 April 2017</td>
-
-                            </tr>
+                        
                             <tr>
                                 <th>Tempat</th>
-                                <td>D.3.L</td>
-                                <td>D.3.L</td>
+                                <td>D.2.L</td> 
+                                <td>D.2.A</td>
                                 <td>D.2.K</td>
-                                <td>D.3.L</td>
+                                <td>D.2.L</td>
                                 <td>D.2.K</td>
-
+                                <td>D.3.A</td>
+                                <td>D.2.A</td>
 
                             </tr>
 
@@ -1141,8 +1146,8 @@
                         <h3>
                             <i class=""></i>Phone</h3>
                         <span>:
-                            <br> - 082123456789 ()
-                            <br> - 082123456789 ()
+                             - 085225779549 (Dian Arima)
+                            <br> &nbsp - 087700058738 (Dinia Kurnia)
 
                         </span>
 
