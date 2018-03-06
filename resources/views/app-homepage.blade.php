@@ -675,8 +675,8 @@
         <div class="container">
             <div class="row">
                 <figure class="col-lg-5 col-sm-4 wow fadeInLeft">
-                    <img src="{{ asset('images/kelas.jpg')}}" width="420px" alt="">
-                    <img src="{{ asset('images/kelas2.jpg')}}" width="420px" alt="">
+                    <img src="{{ asset('images/kelas.jpg')}}" width="420px" alt=""> <br><br><br>
+                    <img src="{{ asset('images/kelas2.jpg')}}" width="420px" alt=""> <br><br><br>
                     <img src="{{ asset('images/Suasana-Doscom-University-Kelas-Web.jpg')}}" width="420px" alt="">
 
                 </figure>
