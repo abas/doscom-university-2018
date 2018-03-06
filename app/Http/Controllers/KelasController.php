@@ -38,4 +38,18 @@ class KelasController extends Controller
                         ]);
         return redirect()->back()->with('msg','kelas '.$nama.' di buka');
     }
+
+    public function show($nama_kelas)
+    {
+        $pesertas = Peserta::all();
+        // return $pesertas;
+        $peserta = [];
+        foreach ($pesertas as $key) {
+            if($key->$nama_kelas == 'true'){
+                array_push($peserta,$key);
+            }
+        }
+        // return $peserta;
+        return view('admin.detail-kelas',compact('peserta','nama_kelas'));
+    }
 }
