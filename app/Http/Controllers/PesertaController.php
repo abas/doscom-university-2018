@@ -41,7 +41,19 @@ class PesertaController extends Controller
      * middleware @var Guest
      */
     public function postDaftar(Request $req)
-    {   
+    {
+        $checkEmail = Peserta::where('email',$req->email)->get()->first();
+        if($checkEmail != null){
+            // return $checkEmail;
+            return redirect()->back()->with(
+                'info',
+                'email tersebut sudah digunakan sebagai '. strtoupper($checkEmail->nama).','.
+                ' silahkan hubungi kami untuk konfirmasi lebih lanjut jika ada perubahan kelas.'.
+                ' Atau jika nama tersebut bukan anda.'.
+                ' \n*kontak ada di halaman utama!'
+            );
+        }
+
         $kelas = [
             $req->web == null ? 'false' : 'true',
             $req->femdev== null ? 'false' : 'true',
