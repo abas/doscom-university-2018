@@ -184,4 +184,24 @@ class PesertaController extends Controller
             return redirect()->back();
         }return ['err'=>'failed to update'];
     }
+
+    public function deletePeserta($id)
+    {
+        $peserta = Peserta::find($id);
+        // return $peserta;
+        if($peserta != null){
+            $p_kelas = Kelas::PgetKelas($peserta);
+            // return $p_kelas;
+            foreach($p_kelas as $kls => $status){
+                if($status == "true"){
+                    $kelas = Kelas::where('nama',$kls)->first();
+                    $kelas->jumlah++;
+                    $kelas->update();
+                }
+            }
+            if($peserta->delete()){
+                return redirect()->back()->with('msg','user barhasil di hapus, silahkan mendaftar ulang');
+            }
+        }return ['msg'=>'user not found!'];
+    }
 }
