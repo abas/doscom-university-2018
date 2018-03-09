@@ -44,6 +44,14 @@ Route::group([
             '/r45ge5th4g6et4h6dvs4d1bvs51gb6sr5b62srb98s5r2b6sr5bs62bh5sr6t46h4dt6h/{peserta_id}/',
             'PesertaController@pelunasan'
         )->name('pelunasan');
+
+
+    // peserta
+        Route::group(['prefix'=>'peserta'],function(){
+            Route::get('/jhgbjhvbcguygbvvjhbvbaevia/{id}/delete','PesertaController@deletePeserta')->name('delete-peserta');
+        });
+
+
 });
 
 Route::get('/daftar','PesertaController@getDaftar')->name('getDaftar');
