@@ -66,4 +66,16 @@ class Kelas extends Model
         else return "none";
     }
 
+    public static function PgetKelas(Peserta $peserta)
+    {
+        return [
+            'web'       => $peserta->web,
+            'femdev'    => $peserta->femdev,
+            'mobile'    => $peserta->mobile,
+            'linux'     => $peserta->linux,
+            'net'       => $peserta->net,
+            'inkscape'  => $peserta->inkscape,
+            'godot'     => $peserta->godot
+        ];
+    }
 }
