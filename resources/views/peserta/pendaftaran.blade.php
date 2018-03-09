@@ -21,7 +21,12 @@
     @elseif(session('iseng'))
     <div class="alert alert-warning" role="alert" id="alert-ragister">
         {{session('iseng')}}  <p align="right" onclick="hide()" style="cursor:pointer"><b>X</b></p>
-        
+
+    </div>
+    @elseif(session('info'))
+    <div class="alert alert-info" role="alert" id="alert-ragister">
+        {{session('info')}}  <p align="right" onclick="hide()" style="cursor:pointer"><b>X</b></p>
+
     </div>
     @endif
 
