@@ -53,7 +53,7 @@
         <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3>Peserta</h3>
+                    <h3>Peserta | total : <b>{{$peserta->count()}}</b></h3>
                 </div>
                 <div class="panel-body">
 
@@ -67,6 +67,7 @@
                                 <th>Transaksi</th>
                                 <th>Status Pembayaran</th>
                                 <th>Kelas</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tfoot>
@@ -78,6 +79,7 @@
                                 <th>Transaksi</th>
                                 <th>Status Pembayaran</th>
                                 <th>Kelas</th>
+                                <th>Action</th>
                             </tr>
                         </tfoot>
                         <tbody>
@@ -115,10 +117,13 @@
                                     </p>
                                     @endif @endforeach
                                 </td>
+                                <td>
+                                    <a href="{{route('delete-peserta',$peserta->id)}}" class="btn btn-sm btn-raised btn-danger"><b>X</b></a>
+                                </td>
                             </tr>
                             @endforeach @else
                             <tr>
-                                <td colspan="7">
+                                <td colspan="8">
                                     <p class="alert" style="color:#FF0034" align="center">
                                         Tidak Ada Data Ditemukan
                                     </p>
