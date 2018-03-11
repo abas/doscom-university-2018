@@ -1,6 +1,6 @@
 APP_NAME=Laravel
 APP_ENV=local
-APP_KEY=base64:XtCW6m1MTFwpUQysMR7a9Oa4BAqT7YG/PD4tAixBv5w=
+APP_KEY=
 APP_DEBUG=true
 APP_LOG_LEVEL=debug
 APP_URL=http://localhost
@@ -8,9 +8,9 @@ APP_URL=http://localhost
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=doscom_university
-DB_USERNAME=root
-DB_PASSWORD=zavier
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
 
 BROADCAST_DRIVER=log
 CACHE_DRIVER=file
