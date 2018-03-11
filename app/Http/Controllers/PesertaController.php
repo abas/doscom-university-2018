@@ -32,7 +32,12 @@ class PesertaController extends Controller
     public function getDaftar()
     {
         $kelas = Kelas::all();
-        return view('peserta.pendaftaran',compact('kelas'));
+        $isPenuh = true;
+        foreach($kelas as $val){
+            if($val->status != 'penuh')
+            $isPenuh = false;
+        }
+        return view('peserta.pendaftaran',compact('kelas','isPenuh'));
     }
 
     /**
@@ -53,16 +58,61 @@ class PesertaController extends Controller
                 ' \n*kontak ada di halaman utama!'
             );
         }
+        
 
         $kelas = [
-            $req->web == null ? 'false' : 'true',
-            $req->femdev== null ? 'false' : 'true',
-            $req->mobile == null ? 'false' : 'true',
-            $req->linux == null ? 'false' : 'true',
-            $req->net == null ? 'false' : 'true',
-            $req->inkscape == null ? 'false' : 'true',
-            $req->godot == null ? 'false' : 'true'
+            'web'       => $req->web == null ? 'false' : 'true',
+            'femdev'    => $req->femdev== null ? 'false' : 'true',
+            'mobile'    => $req->mobile == null ? 'false' : 'true',
+            'linux'     => $req->linux == null ? 'false' : 'true',
+            'net'       => $req->net == null ? 'false' : 'true',
+            'inkscape'  => $req->inkscape == null ? 'false' : 'true',
+            'godot'     => $req->godot == null ? 'false' : 'true'
         ];
+        
+        if($kelas['web'] == 'true'){
+            $web = Kelas::where('nama','web')->first();
+            if($web->status == 'penuh'){
+                return redirect()->back()->with('info','maaf kak, kelas Web Programming saat ini sudah penuh');
+            }
+        }
+        if($kelas['femdev'] == 'true'){
+            $femdev = Kelas::where('nama','femdev')->first();
+            if($femdev->status == 'penuh'){
+                return redirect()->back()->with('info','maaf kak, kelas FemaleDev saat ini sudah penuh');
+            }
+        }
+        if($kelas['mobile'] == 'true'){
+            $mobile = Kelas::where('nama','mobile')->first();
+            if($mobile->status == 'penuh'){
+                return redirect()->back()->with('info','maaf kak, kelas Mobile Programming saat ini sudah penuh');
+            }
+        }
+        if($kelas['linux'] == 'true'){
+            $linux = Kelas::where('nama','linux')->first();
+            if($linux->status == 'penuh'){
+                return redirect()->back()->with('info','maaf kak, kelas Linux Fundamental saat ini sudah penuh');
+            }
+        }
+        if($kelas['net'] == 'true'){
+            $net = Kelas::where('nama','net')->first();
+            if($net->status == 'penuh'){
+                return redirect()->back()->with('info','maaf kak, kelas Networking saat ini sudah penuh');
+            }
+        }
+        if($kelas['inkscape'] == 'true'){
+            $inkscape = Kelas::where('nama','inkscape')->first();
+            if($inkscape->status == 'penuh'){
+                return redirect()->back()->with('info','maaf kak, kelas Multimedia Inkscape saat ini sudah penuh');
+            }
+        }
+        if($kelas['godot'] == 'true'){
+            $godot = Kelas::where('nama','godot')->first();
+            if($godot->status == 'penuh'){
+                return redirect()->back()->with('info','maaf kak, kelas Game Development saat ini sudah penuh');
+            }
+            
+        }
 
         // return $kelas;
         
@@ -96,62 +146,6 @@ class PesertaController extends Controller
     
         
         if($peserta){
-            // if($peserta->web == 'true'){
-            //     $web = Kelas::where('nama','web')->first();
-            //     $web->jumlah = $web->jumlah - 1;
-            //     if($web->jumlah == 0){
-            //         $web->status = 'penuh';
-            //     }
-            //     $web->update();
-            // }
-            // if($peserta->femdev == 'true'){
-            //     $femdev = Kelas::where('nama','femdev')->first();
-            //     $femdev->jumlah = $femdev->jumlah - 1;
-            //     if($femdev->jumlah == 0){
-            //         $femdev->status = 'penuh';
-            //     }
-            //     $femdev->update();
-            // }
-            // if($peserta->mobile == 'true'){
-            //     $mobile = Kelas::where('nama','mobile')->first();
-            //     $mobile->jumlah = $mobile->jumlah - 1;
-            //     if($mobile->jumlah == 0){
-            //         $mobile->status = 'penuh';
-            //     }
-            //     $mobile->update();
-            // }
-            // if($peserta->linux == 'true'){
-            //     $linux = Kelas::where('nama','linux')->first();
-            //     $linux->jumlah = $linux->jumlah - 1;
-            //     if($linux->jumlah == 0){
-            //         $linux->status = 'penuh';
-            //     }
-            //     $linux->update();
-            // }
-            // if($peserta->net == 'true'){
-            //     $net = Kelas::where('nama','net')->first();
-            //     $net->jumlah = $net->jumlah - 1;
-            //     if($net->jumlah == 0){
-            //         $net->status = 'penuh';
-            //     }
-            //     $net->update();
-            // }
-            // if($peserta->inkscape == 'true'){
-            //     $inkscape = Kelas::where('nama','inkscape')->first();
-            //     $inkscape->jumlah = $inkscape->jumlah - 1;
-            //     if($inkscape->jumlah == 0){
-            //         $inkscape->status = 'penuh';
-            //     }
-            //     $inkscape->update();
-            // }
-            // if($peserta->godot == 'true'){
-            //     $godot = Kelas::where('nama','godot')->first();
-            //     $godot->jumlah = $godot->jumlah - 1;
-            //     if($godot->jumlah == 0){
-            //         $godot->status = 'penuh';
-            //     }
-            //     $godot->update();
-            // }
             return redirect(route('getDaftar'))->with('success','register successfull');
         }return redirect(route('getDaftar'))->with('failed','failed to register');
         
