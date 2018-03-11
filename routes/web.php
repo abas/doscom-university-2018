@@ -47,17 +47,19 @@ Route::group([
 
 
     // peserta
-        Route::group(['prefix'=>'peserta'],function(){
-            Route::get('/jhgbjhvbcguygbvvjhbvbaevia/{id}/delete','PesertaController@deletePeserta')->name('delete-peserta');
-        });
+    Route::group(['prefix'=>'peserta'],function(){
+        Route::get('/jhgbjhvbcguygbvvjhbvbaevia/{id}/delete','PesertaController@deletePeserta')->name('delete-peserta');
+    });
 
-
+        
+    // must admin
+    Route::post('/peserta/{id}/bayar','PesertaController@pembayaran')->name('pembayaran');
+    
+    Route::get('/semua-kelas','KelasController@semuaKelas')->name('semua-kelas');
 });
 
 Route::get('/daftar','PesertaController@getDaftar')->name('getDaftar');
 Route::post('/daftar','PesertaController@postDaftar')->name('postDaftar');
 
-// must admin
-Route::post('/peserta/{id}/bayar','PesertaController@pembayaran')->name('pembayaran');
-
-Route::get('/semua-kelas','KelasController@semuaKelas')->name('semua-kelas');
+Route::get('peserta/863476gf437f39f7384t6f3746ft6836f47/info','PesertaController@getInformation')->name('get-informasi-peserta');
+Route::post('peserta/98624gf796t4g7962gft47962gtf726g/info','PesertaController@postInformation')->name('post-informasi-peserta');
