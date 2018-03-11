@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Doscom University</title>
-    <meta name="description" content="Doscom University (DU) adalah kegiatan belajar mengajar yang berbentuk workshop dengan para dosen pengurus Doscom. DU tahun 2018 membuka kelas yaitu Linux, Pemrograman Mobile, Pemrograman Web, Jaringan Komputer, dan Multimedia. Masing-masing kelas terdapat beberapa pertemuan dengan jumlah peserta maksimal 30 orang/ kelas.">
+    <meta name="description" content="Doscom University (DU) adalah kegiatan belajar mengajar yang berbentuk workshop dengan para dosen pengurus Doscom. DU tahun 2018 membuka kelas yaitu Linux, Pemrograman Mobile, Pemrograman Web, Jaringan Komputer, dan Multimedia. Masing-masing kelas terdapat beberapa pertemuan dengan jumlah peserta maksimal 35 orang/ kelas.">
     <link rel="shortcut icon" type="image/png" href="http://www.doscom.org/favicon.png" />
     <meta name="HandheldFriendly" content="true" />
     <meta name="MobileOptimized" content="320" />
@@ -194,20 +194,17 @@
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 1</th>
-                                        <td>20 Maret 2017</td>
+                                        <td>17 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 2</th>
-                                        <td>27 Maret 2017</td>
+                                        <td>24 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 3</th>
-                                        <td>3 April 2017</td>
+                                        <td>7 April 2018</td>
                                     </tr>
-                                    <tr>
-                                        <th>Pertemuan 4</th>
-                                        <td>10 April 2017</td>
-                                    </tr>
+                                 
 
                                 </tbody>
                             </table>
@@ -283,24 +280,21 @@
                                 <tbody>
                                     <tr>
                                         <th>Hari / Waktu / Tempat</th>
-                                        <th>Rabu / 16:30-19:30 /D.3.L</th>
+                                        <th>Sabtu / 09:30-12:30 /D.2.A</th>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 1</th>
-                                        <td>22 Maret 2017</td>
+                                        <td>17 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 2</th>
-                                        <td>29 Maret 2017</td>
+                                        <td>24 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 3</th>
-                                        <td>5 April 2017</td>
+                                        <td>7 April 2018</td>
                                     </tr>
-                                    <tr>
-                                        <th>Pertemuan 4</th>
-                                        <td>12 April 2017</td>
-                                    </tr>
+                                  
 
                             </table>
                         </div>
@@ -342,7 +336,7 @@
                             <b>Proyek Akhir</b>
                         </div>
                         <div class="col-md-9">
-                            Membuat aplikasi My Todo List dengan PHP dan MySql
+                            Membuat Web Aplikasi Sederhana Dengan Php & Mysql
                         </div>
                     </div>
                     <hr>
@@ -370,24 +364,21 @@
                                 <tbody>
                                     <tr>
                                         <th>Hari / Waktu / Tempat</th>
-                                        <th>Senin / 16:30-19:30 /D.2.K</th>
+                                        <th>Sabtu/ 12:30-15:30 /D.2.K</th>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 1</th>
-                                        <td>20 Maret 2017</td>
+                                        <td>17 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 2</th>
-                                        <td>27 Maret 2017</td>
+                                        <td>24 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 3</th>
-                                        <td>3 April 2017</td>
+                                        <td>7 April 2018</td>
                                     </tr>
-                                    <tr>
-                                        <th>Pertemuan 4</th>
-                                        <td>10 April 2017</td>
-                                    </tr>
+                                 
                                 </tbody>
                             </table>
                         </div>
@@ -420,8 +411,8 @@
                             <b>Materi</b>
                         </div>
                         <div class="col-md-9">
-                            Instalasi dan setting Mikrotik, Subnetting, Routing, Vpn, dan Hotspot.
-                        </div>
+                            Cisco
+                            </div>
                     </div>
                     <hr>
                     <div class="row">
@@ -429,8 +420,8 @@
                             <b>Ketrampilan</b>
                         </div>
                         <div class="col-md-9">
-                            Menguasai teknik instalasi dan setting Mikrotik, Subnetting, Routing, Vpn, dan Hotspot.
-                        </div>
+                        Menguasai Cisco 
+                            </div>
                     </div>
                     <hr>
                     <div class="row">
@@ -438,7 +429,6 @@
                             <b>Syarat</b>
                         </div>
                         <div class="col-md-9">
-                            Subnetting
                         </div>
                     </div>
                     <hr>
@@ -457,24 +447,21 @@
                                 <tbody>
                                     <tr>
                                         <th>Hari / Waktu /Tempat</th>
-                                        <th>Selasa /14:30-17:30 /D.3.L</th>
+                                        <th>Sabtu /09:30-12:00 /D.3.L</th>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 1</th>
-                                        <td>21 Maret 2017</td>
+                                        <td>17 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 2</th>
-                                        <td>Jumat, 31 Maret 2017 (D.2.K) = 16.30 - 19.30</td>
+                                        <td>24 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 3</th>
-                                        <td>4 April 2017</td>
+                                        <td>7 April 2018</td>
                                     </tr>
-                                    <tr>
-                                        <th>Pertemuan 4</th>
-                                        <td>11 April 2017</td>
-                                    </tr>
+                                 
                                 </tbody>
                             </table>
                         </div>
@@ -544,24 +531,21 @@
                                 <tbody>
                                     <tr>
                                         <th>Hari / Waktu /Tempat</th>
-                                        <th>Sabtu / 14:30-17:30 /D.2.K</th>
+                                        <th>Sabtu / 09:30-12:00 /D.2.K</th>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 1</th>
-                                        <td>23 Maret 2017</td>
+                                        <td>17 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 2</th>
-                                        <td>30 Maret 2017</td>
+                                        <td>24 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 3</th>
-                                        <td>6 April 2017</td>
+                                        <td>7 April 2018</td>
                                     </tr>
-                                    <tr>
-                                        <th>Pertemuan 4</th>
-                                        <td>13 April 2017</td>
-                                    </tr>
+                                
                                 </tbody>
                             </table>
                         </div>
@@ -575,6 +559,173 @@
 
         </div>
     </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalfemale" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Kelas
+                        <b>Female Dev</b>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <b>Materi</b>
+                        </div>
+                        <div class="col-md-9">
+                           
+Belajar HTML dan CSS dasar, Belajar menggunakan CSS Framework (Bootstrap)
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <b>Proyek Akhir</b>
+                        </div>
+                        <div class="col-md-9">
+                            Membuat Web Dengan Framework Bootstrap
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <b>Syarat</b>
+                        </div>
+                        <div class="col-md-9">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <b>Jadwal</b>
+                        </div>
+                        <div class="col-md-9">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Kelas</th>
+                                        <th>FemaleDev</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Hari / Waktu / Tempat</th>
+                                        <th>Sabtu / 09:00-15:00 /D.2.A</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Pertemuan 1</th>
+                                        <td>14 April 2018</td>
+                                    </tr>
+                                   
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="{{ url('daftar') }}" class="btn btn-default">Daftar</a>
+                    <button type="button" class="btn " data-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalgodot" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Kelas
+                        <b>Game Development</b>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <b>Materi</b>
+                        </div>
+                        <div class="col-md-9">
+                           Belajar Membuat Game Dengan Godot Game Engine
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <b>Proyek Akhir</b>
+                        </div>
+                        <div class="col-md-9">
+                            Membuat Game Sederhana Dengan Godot Game Engine
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <b>Syarat</b>
+                        </div>
+                        <div class="col-md-9">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <b>Jadwal</b>
+                        </div>
+                        <div class="col-md-9">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Kelas</th>
+                                        <th>Game Development</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Hari / Waktu / Tempat</th>
+                                        <th>Sabtu / 12:30-15:00 /D.2.A</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Pertemuan 1</th>
+                                        <td>17 Maret 2018</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Pertemuan 2</th>
+                                        <td>24 Maret 2018</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Pertemuan 3</th>
+                                        <td>7 April 2018</td>
+                                    </tr>
+                                   
+                                   
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="{{ url('daftar') }}" class="btn btn-default">Daftar</a>
+                    <button type="button" class="btn " data-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <header class="header" id="header">
         <!--header-start-->
         <div class="container">
@@ -649,7 +800,7 @@
                                 <b>Doscom University (DU) adalah kegiatan belajar mengajar yang berbentuk workshop dengan para
                                     dosen pengurus Doscom. DU tahun 2018 membuka 7 kelas yaitu Linux, Pemrograman Mobile,
                                     Pemrograman Web, Jaringan Komputer, Multimedia Inkscape,Female Dev, Masing-masing kelas
-                                    terdapat 3 pertemuan dengan jumlah peserta maksimal 30 orang/ kelas</b>
+                                    terdapat 3 pertemuan dengan jumlah peserta maksimal 35 orang/ kelas</b>
                                 <br>
 
 
@@ -710,10 +861,9 @@
                         <div class="featured-box-col2 wow fadeInRight delay-02s">
                             <h3> &nbsp Female Dev </h3>
 
-                            <p>&nbsp Belajar HTML dan CSS dasar, Belajar menggunakan CSS Framework (Bootstrap),
-                                <br> &nbsp Belajar Backend dengan PHP, Berinteraksi dengan database MySql. </p>
+                            <p>&nbsp Belajar HTML dan CSS dasar, Belajar menggunakan CSS Framework (Bootstrap)
                             <br>
-                            <a class="btn btn-raised btn-sm btn-info" data-toggle="modal" data-target="#modalWeb">Detail</a>
+                            <a class="btn btn-raised btn-sm btn-info" data-toggle="modal" data-target="#modalfemale">Detail</a>
 
                         </div>
                     </div>
@@ -768,7 +918,7 @@
                         </div>
                         <div class="featured-box-col2 wow fadeInRight delay-04s">
                             <h3>&nbsp Jaringan Komputer </h3>
-                            <p>&nbsp Instalasi dan setting Mikrotik, Subnetting, Routing, Vpn, dan Hotspot </p>
+                            <p>&nbsp Belajar Dasar Dasar Cisco </p>
 
                             <br>
                             <a class="btn btn-raised btn-sm btn-info" data-toggle="modal" data-target="#modalNetworking">Detail</a>
@@ -804,7 +954,7 @@
                             <h3>&nbsp Game Development </h3>
                             <p>&nbsp Belajar Membuat game Dengan Godot Engine </p>
                             <br>
-                            <a class="btn btn-raised btn-sm btn-info" data-toggle="modal" data-target="#modalMultimedia">Detail</a>
+                            <a class="btn btn-raised btn-sm btn-info" data-toggle="modal" data-target="#modalgodot">Detail</a>
 
 
                         </div>
@@ -890,7 +1040,7 @@
                                 <td> 17 Maret 2018</td>
                                 <td> 17 Maret 2018</td>
                                 <td> -</td>
-                                <td> 24 Maret 2018</td>
+                                <td> 17 Maret 2018</td>
                             </tr>
                             <tr>
                                 <th>Pertemuan 2</th>
@@ -921,7 +1071,7 @@
                                 <td>D.2.K</td>
                                 <td>D.2.L</td>
                                 <td>D.2.K</td>
-                                <td>D.3.A</td>
+                                <td>D.2.A</td>
                                 <td>D.2.A</td>
 
                             </tr>
