@@ -10,22 +10,34 @@
 
     @if(session('success'))
     <div class="alert alert-success" role="alert" id="alert-ragister">
-        {{session('success')}} <p align="right" onclick="hide()" style="cursor:pointer"><b>X</b></p>
-        
+        {{session('success')}}
+        <p align="right" onclick="hide()" style="cursor:pointer">
+            <b>X</b>
+        </p>
+
     </div>
     @elseif(session('failed'))
     <div class="alert alert-danger" role="alert" id="alert-ragister">
-        {{session('failed')}}  <p align="right" onclick="hide()" style="cursor:pointer"><b>X</b></p>
-        
+        {{session('failed')}}
+        <p align="right" onclick="hide()" style="cursor:pointer">
+            <b>X</b>
+        </p>
+
     </div>
     @elseif(session('iseng'))
     <div class="alert alert-warning" role="alert" id="alert-ragister">
-        {{session('iseng')}}  <p align="right" onclick="hide()" style="cursor:pointer"><b>X</b></p>
+        {{session('iseng')}}
+        <p align="right" onclick="hide()" style="cursor:pointer">
+            <b>X</b>
+        </p>
 
     </div>
     @elseif(session('info'))
     <div class="alert alert-info" role="alert" id="alert-ragister">
-        {{session('info')}}  <p align="right" onclick="hide()" style="cursor:pointer"><b>X</b></p>
+        {{session('info')}}
+        <p align="right" onclick="hide()" style="cursor:pointer">
+            <b>X</b>
+        </p>
 
     </div>
     @endif
@@ -36,7 +48,17 @@
             divId.style.display = "none";
         }
     </script>
-    <br><br>
+    <br>
+    <br> @if($isPenuh)
+
+    <div class="alert alert-danger">
+        <h1>Maaf kak, pendaftaran telah ditutup karena kuota telah habis.</h1>
+    </div>
+    <span class="bmd-form-group">
+        <a href="{{url('/')}}" class="btn btn-success btn-raised">Home</a>
+        <a href="{{route('get-informasi-peserta')}}" class="btn btn-info btn-raised">Check Email</a>
+    </span>
+    @else
     <form class="form-horizontal" action="{{route('postDaftar')}}" method="post">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <div class="form-group">
@@ -75,10 +97,7 @@
                 disabled
             @endif">
                 <label class="bmd-label-floating">
-                    <input name="web" type="checkbox" value="join" 
-                    @if($kelas[0]->status=='penuh')
-                        disabled title="kelas penuh"
-                    @endif> Web Programming
+                    <input name="web" type="checkbox" value="true" @if($kelas[0]->status=='penuh') disabled title="kelas penuh" @endif> Web Programming
                 </label>
             </div>
 
@@ -87,10 +106,7 @@
                 disabled
             @endif">
                 <label class="bmd-label-floating">
-                    <input name="femdev" type="checkbox" value="join"
-                    @if($kelas[1]->status=='penuh')
-                        disabled title="kelas penuh"
-                    @endif> Female Dev
+                    <input name="femdev" type="checkbox" value="true" @if($kelas[1]->status=='penuh') disabled title="kelas penuh" @endif> Female Dev
                 </label>
             </div>
 
@@ -99,10 +115,7 @@
                 disabled
             @endif">
                 <label class="bmd-label-floating">
-                    <input name="mobile" type="checkbox" value="join"
-                    @if($kelas[2]->status=='penuh')
-                        disabled title="kelas penuh"
-                    @endif> Mobile Programming
+                    <input name="mobile" type="checkbox" value="true" @if($kelas[2]->status=='penuh') disabled title="kelas penuh" @endif> Mobile Programming
                 </label>
             </div>
 
@@ -111,10 +124,7 @@
                 disabled
             @endif">
                 <label class="bmd-label-floating">
-                    <input name="linux" type="checkbox" value="join"
-                    @if($kelas[3]->status=='penuh')
-                        disabled title="kelas penuh"
-                    @endif> Linux Fundamental
+                    <input name="linux" type="checkbox" value="true" @if($kelas[3]->status=='penuh') disabled title="kelas penuh" @endif> Linux Fundamental
                 </label>
             </div>
 
@@ -123,10 +133,7 @@
                 disabled
             @endif">
                 <label class="bmd-label-floating">
-                    <input name="net" type="checkbox" value="join"
-                    @if($kelas[4]->status=='penuh')
-                        disabled title="kelas penuh"
-                    @endif> Jaringan Komputer
+                    <input name="net" type="checkbox" value="true" @if($kelas[4]->status=='penuh') disabled title="kelas penuh" @endif> Jaringan Komputer
                 </label>
             </div>
 
@@ -135,10 +142,7 @@
                 disabled
             @endif">
                 <label class="bmd-label-floating">
-                    <input name="inkscape" type="checkbox" value="join"
-                    @if($kelas[5]->status=='penuh')
-                        disabled title="kelas penuh"
-                    @endif> Inkscape
+                    <input name="inkscape" type="checkbox" value="true" @if($kelas[5]->status=='penuh') disabled title="kelas penuh" @endif> Inkscape
                 </label>
             </div>
 
@@ -147,18 +151,18 @@
                 disabled
             @endif">
                 <label class="bmd-label-floating">
-                    <input name="godot" type="checkbox" value="join"
-                    @if($kelas[6]->status=='penuh')
-                        disabled title="kelas penuh"
-                    @endif> Godot Game Engine
+                    <input name="godot" type="checkbox" value="true" @if($kelas[6]->status=='penuh') disabled title="kelas penuh" @endif> Godot Game Engine
                 </label>
             </div>
             <br>
             <div class="panel-footer">
                 <i>Note:</i>
                 <br> - boleh join lebih dari 1 kelas
-                <br> - <b>Female Dev</b> hanya untuk peserta perempuan
-                <br> - kelas yang <b>tidak bisa dipilih</b> berarti kelas tersebut telah <b>penuh</b>
+                <br> -
+                <b>Female Dev</b> hanya untuk peserta perempuan
+                <br> - kelas yang
+                <b>tidak bisa dipilih</b> berarti kelas tersebut telah
+                <b>penuh</b>
             </div>
         </div>
 
@@ -174,6 +178,6 @@
             <a href="{{route('get-informasi-peserta')}}" class="btn btn-warning btn-raised">Check Email</a>
         </span>
     </form>
-
+    @endif
 </div>
 @endsection
