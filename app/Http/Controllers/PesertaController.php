@@ -216,4 +216,21 @@ class PesertaController extends Controller
             }
         }return ['msg'=>'user not found!'];
     }
+
+
+    public function getInformation()
+    {
+        return view('peserta.cari-peserta');
+    }
+
+    public function postInformation(Request $req)
+    {
+        $peserta = Peserta::where('email',$req->email)->get()->first();
+        if($peserta == null){
+            return redirect()->back()->with('iseng','email yang anda cari belum terdaftar');
+            // return ['msg'=>'email tidak terdaftar'];
+        }
+        $kelas = Kelas::PgetKelas($peserta);
+        return view('peserta.detail-peserta',compact('peserta','kelas')); 
+    }
 }
