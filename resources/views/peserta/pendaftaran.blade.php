@@ -171,6 +171,7 @@
             <!-- needed to match padding for floating labels -->
             <button type="submit" class="btn btn-info btn-raised">Submit</button>
             <a href="{{url('/')}}" class="btn btn-success btn-raised">Home</a>
+            <a href="{{route('get-informasi-peserta')}}" class="btn btn-warning btn-raised">Check Email</a>
         </span>
     </form>
 
