@@ -252,16 +252,20 @@ class PesertaController extends Controller
         $peserta = Peserta::find($id);
         // return $peserta;
         if($peserta != null){
-            $p_kelas = Kelas::PgetKelas($peserta);
-            // return $p_kelas;
-            foreach($p_kelas as $kls => $status){
-                if($status == "true"){
-                    $kelas = Kelas::where('nama',$kls)->first();
-                    $kelas->jumlah++;
-                    $kelas->update();
+            if($peserta->status_pembayaran == 'lunas'){
+                $p_kelas = Kelas::PgetKelas($peserta);
+                // return $p_kelas;
+                foreach($p_kelas as $kls => $status){
+                    if($status == "true"){
+                        $kelas = Kelas::where('nama',$kls)->first();
+                        $kelas->jumlah++;
+                        $kelas->update();
+                    }
                 }
-            }
-            if($peserta->delete()){
+                if($peserta->delete()){
+                    return redirect()->back()->with('msg','user barhasil di hapus, silahkan mendaftar ulang');
+                }
+            }else if($peserta->delete()){
                 return redirect()->back()->with('msg','user barhasil di hapus, silahkan mendaftar ulang');
             }
         }return ['msg'=>'user not found!'];
