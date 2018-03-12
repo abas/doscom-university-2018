@@ -37,6 +37,9 @@ Route::group([
     Route::get('/kelas/{nama_kelas}/ditutup','KelasController@tutupKelas')->name('tutup-kelas');
     // buka kelas
     Route::get('/kelas/{nama_kelas}/dibuka','KelasController@bukaKelas')->name('buka-kelas');
+    // counter plus
+    Route::get('/kelas/{id}/min/ghacbuygecf764gf4u6tfgcwcy4bgtcu','KelasController@counterMinus')->name('minCounter');
+    Route::get('/kelas/{id}/plus/ghacbuygecf764gf4u6tfgcwcy4bgtcu','KelasController@counterPlus')->name('plusCounter');
     
     
     // pelunasan
@@ -54,7 +57,6 @@ Route::group([
         
     // must admin
     Route::post('/peserta/{id}/bayar','PesertaController@pembayaran')->name('pembayaran');
-    
     Route::get('/semua-kelas','KelasController@semuaKelas')->name('semua-kelas');
 });
 
