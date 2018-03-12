@@ -52,4 +52,28 @@ class KelasController extends Controller
         // return $peserta;
         return view('admin.detail-kelas',compact('peserta','nama_kelas'));
     }
+
+    public function counterMinus($id)
+    {
+        $kelas = Kelas::find($id);
+        if($kelas->jumlah > 0){
+            $kelas->jumlah--;
+            if($kelas->update()){
+                return redirect()->back()->with('msg','updated!');
+            }
+        }
+        return redirect()->back()->with('msg','update failed!');
+    }
+
+    public function counterplus($id)
+    {
+        $kelas = Kelas::find($id);
+        if($kelas->jumlah < 40){
+            $kelas->jumlah++;
+            if($kelas->update()){
+                return redirect()->back()->with('msg','updated!');
+            }
+        }
+        return redirect()->back()->with('msg','update failed!');
+    }
 }
