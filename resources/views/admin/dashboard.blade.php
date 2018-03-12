@@ -24,7 +24,10 @@
             <div class="panel card panel-default">
                 <div class="panel-heading" class="bg-info">
                     <b>
-                        <h3 style="text-transform:capitalize">{{$kelas->nama}}</h3>
+                        <h3 style="text-transform:capitalize">{{$kelas->nama}}
+                            <a style="text-align:right;" href="{{route('plusCounter',$kelas->id)}}" class="btn btn-raised btn-sm btn-success"><b>+</b></a>
+                            <a style="text-align:right;" href="{{route('minCounter',$kelas->id)}}" class="btn btn-raised btn-sm btn-warning"><b>-</b></a>
+                        </h3>
                     </b>
                 </div>
                 <div class="panel-body">
