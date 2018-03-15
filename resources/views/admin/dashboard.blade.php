@@ -48,6 +48,26 @@
             </div>
         </div>
         @endforeach
+        <div class="col-md-3">
+            <div class="panel card panel-default">
+                <div class="panel-heading" class="bg-info">
+                    <b>
+                        <h3 style="text-transform:capitalize" class="alert alert-success">Transaksi</h3>
+                    </b>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        lunas : <b>{{$lunas}}</b>
+                    </p>
+                    <p>
+                        belum lunas : <b>{{$peserta->count() - $lunas}}</b>
+                    </p>
+                    <p>
+                        total terkumpul : <b>{{$total_uang_tekumpul}}</b>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
     <br>
     <br>
