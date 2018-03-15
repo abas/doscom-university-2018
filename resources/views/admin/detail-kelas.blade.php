@@ -11,6 +11,7 @@
         <div class="card-body text-center">
             <div class="row">
                 @foreach($peserta as $peserta)
+                @if($peserta->status_pembayaran == 'lunas')
                 <div class="col-md-3">
                     <div class=" card panel-default">
                         <div class="panel-body">
@@ -27,6 +28,7 @@
                         </div>
                     </div>
                 </div>
+                @endif
                 @endforeach
             </div>
         </div>
