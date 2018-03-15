@@ -190,21 +190,21 @@
                                 <tbody>
                                     <tr>
                                         <th>Hari / Waktu / Tempat</th>
-                                        <th>Senin /16:30-19:30 /D.3.L</th>
+                                        <th>Senin /18:30-20:10 /D.3.L</th>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 1</th>
-                                        <td>17 Maret 2018</td>
+                                        <td>19 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 2</th>
-                                        <td>24 Maret 2018</td>
+                                        <td>26 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 3</th>
-                                        <td>7 April 2018</td>
+                                        <td>2 April 2018</td>
                                     </tr>
-                                 
+
 
                                 </tbody>
                             </table>
@@ -280,21 +280,21 @@
                                 <tbody>
                                     <tr>
                                         <th>Hari / Waktu / Tempat</th>
-                                        <th>Sabtu / 09:30-12:30 /D.2.A</th>
+                                        <th>Kamis / 18:30-20:10 /D.2.A</th>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 1</th>
-                                        <td>17 Maret 2018</td>
+                                        <td>22 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 2</th>
-                                        <td>24 Maret 2018</td>
+                                        <td>29 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 3</th>
-                                        <td>7 April 2018</td>
+                                        <td>5 April 2018</td>
                                     </tr>
-                                  
+
 
                             </table>
                         </div>
@@ -364,21 +364,21 @@
                                 <tbody>
                                     <tr>
                                         <th>Hari / Waktu / Tempat</th>
-                                        <th>Sabtu/ 12:30-15:30 /D.2.K</th>
+                                        <th>Selasa/ 18:30-20:10 /D.3.L</th>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 1</th>
-                                        <td>17 Maret 2018</td>
+                                        <td>20 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 2</th>
-                                        <td>24 Maret 2018</td>
+                                        <td>27 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 3</th>
-                                        <td>7 April 2018</td>
+                                        <td>3 April 2018</td>
                                     </tr>
-                                 
+
                                 </tbody>
                             </table>
                         </div>
@@ -412,7 +412,7 @@
                         </div>
                         <div class="col-md-9">
                             Cisco
-                            </div>
+                        </div>
                     </div>
                     <hr>
                     <div class="row">
@@ -420,8 +420,8 @@
                             <b>Ketrampilan</b>
                         </div>
                         <div class="col-md-9">
-                        Menguasai Cisco 
-                            </div>
+                            Menguasai Cisco
+                        </div>
                     </div>
                     <hr>
                     <div class="row">
@@ -447,21 +447,21 @@
                                 <tbody>
                                     <tr>
                                         <th>Hari / Waktu /Tempat</th>
-                                        <th>Sabtu /09:30-12:00 /D.3.L</th>
+                                        <th>Rabu /18:30-20:10 /D.3.L</th>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 1</th>
-                                        <td>17 Maret 2018</td>
+                                        <td>21 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 2</th>
-                                        <td>24 Maret 2018</td>
+                                        <td>28 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 3</th>
-                                        <td>7 April 2018</td>
+                                        <td>4 April 2018</td>
                                     </tr>
-                                 
+
                                 </tbody>
                             </table>
                         </div>
@@ -531,21 +531,21 @@
                                 <tbody>
                                     <tr>
                                         <th>Hari / Waktu /Tempat</th>
-                                        <th>Sabtu / 09:30-12:00 /D.2.K</th>
+                                        <th>Kamis / 18:30-20:10 /D.3.L</th>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 1</th>
-                                        <td>17 Maret 2018</td>
+                                        <td>22 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 2</th>
-                                        <td>24 Maret 2018</td>
+                                        <td>29 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 3</th>
-                                        <td>7 April 2018</td>
+                                        <td>5 April 2018</td>
                                     </tr>
-                                
+
                                 </tbody>
                             </table>
                         </div>
@@ -580,8 +580,8 @@
                             <b>Materi</b>
                         </div>
                         <div class="col-md-9">
-                           
-Belajar HTML dan CSS dasar, Belajar menggunakan CSS Framework (Bootstrap)
+
+                            Belajar HTML dan CSS dasar, Belajar menggunakan CSS Framework (Bootstrap)
                         </div>
                     </div>
                     <hr>
@@ -622,9 +622,9 @@ Belajar HTML dan CSS dasar, Belajar menggunakan CSS Framework (Bootstrap)
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 1</th>
-                                        <td>14 April 2018</td>
+                                        <td>7 April 2018</td>
                                     </tr>
-                                   
+
 
                             </table>
                         </div>
@@ -658,7 +658,7 @@ Belajar HTML dan CSS dasar, Belajar menggunakan CSS Framework (Bootstrap)
                             <b>Materi</b>
                         </div>
                         <div class="col-md-9">
-                           Belajar Membuat Game Dengan Godot Game Engine
+                            Belajar Membuat Game Dengan Godot Game Engine
                         </div>
                     </div>
                     <hr>
@@ -695,22 +695,22 @@ Belajar HTML dan CSS dasar, Belajar menggunakan CSS Framework (Bootstrap)
                                 <tbody>
                                     <tr>
                                         <th>Hari / Waktu / Tempat</th>
-                                        <th>Sabtu / 12:30-15:00 /D.2.A</th>
+                                        <th>Selasa / 18:30-20:10 /D.2.J</th>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 1</th>
-                                        <td>17 Maret 2018</td>
+                                        <td>20 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 2</th>
-                                        <td>24 Maret 2018</td>
+                                        <td>27 Maret 2018</td>
                                     </tr>
                                     <tr>
                                         <th>Pertemuan 3</th>
-                                        <td>7 April 2018</td>
+                                        <td>3 April 2018</td>
                                     </tr>
-                                   
-                                   
+
+
 
                             </table>
                         </div>
@@ -826,8 +826,14 @@ Belajar HTML dan CSS dasar, Belajar menggunakan CSS Framework (Bootstrap)
         <div class="container">
             <div class="row">
                 <figure class="col-lg-5 col-sm-4 wow fadeInLeft">
-                    <img src="{{ asset('images/kelas.jpg')}}" width="420px" alt=""> <br><br><br>
-                    <img src="{{ asset('images/kelas2.jpg')}}" width="420px" alt=""> <br><br><br>
+                    <img src="{{ asset('images/kelas.jpg')}}" width="420px" alt="">
+                    <br>
+                    <br>
+                    <br>
+                    <img src="{{ asset('images/kelas2.jpg')}}" width="420px" alt="">
+                    <br>
+                    <br>
+                    <br>
                     <img src="{{ asset('images/Suasana-Doscom-University-Kelas-Web.jpg')}}" width="420px" alt="">
 
                 </figure>
@@ -862,8 +868,8 @@ Belajar HTML dan CSS dasar, Belajar menggunakan CSS Framework (Bootstrap)
                             <h3> &nbsp Female Dev </h3>
 
                             <p>&nbsp Belajar HTML dan CSS dasar, Belajar menggunakan CSS Framework (Bootstrap)
-                            <br>
-                            <a class="btn btn-raised btn-sm btn-info" data-toggle="modal" data-target="#modalfemale">Detail</a>
+                                <br>
+                                <a class="btn btn-raised btn-sm btn-info" data-toggle="modal" data-target="#modalfemale">Detail</a>
 
                         </div>
                     </div>
@@ -1008,74 +1014,72 @@ Belajar HTML dan CSS dasar, Belajar menggunakan CSS Framework (Bootstrap)
                         <thead>
                             <tr>
                                 <th>Kelas</th>
-                                <th>Linux</th>
                                 <th>Pemrograman Mobile</th>
-                                <th>Pemrograman Web</th>
-                                <th>Jaringan Komputer</th>
                                 <th>Multimedia Inkscape</th>
-                                <th>Female Dev</th>
+                                <th>Jaringan Komputer</th>
+                                <th>Pemrograman Web</th>
                                 <th>Game Development</th>
+                                <th>Linux</th>
+                                <th>Female Dev</th>
                             </tr>
 
                         </thead>
                         <tbody>
                             <tr>
                                 <th>Hari / Waktu</th>
-                                <th>Sabtu , 12.30-15.00</th>  
-                                <th>Sabtu , 09.30-12:00</th>   
-                                <th>Sabtu , 12:30-15:00</th> 
-                                <th>Sabtu , 09:30-12:00</th> 
-                                <th>Sabtu , 09:30-12:00</th> 
-                                <th>Sabtu , 09:00-15:00</th> 
-                                <th>Sabtu , 12:30-15:00</th> 
-                               
-
-
+                                <th>Kamis
+                                    <br> 18:30 – 20:10</th>
+                                <th>Kamis
+                                    <br> 18:30 – 20:10</th>
+                                <th>Rabu
+                                    <br> 18:30 – 20:10</th>
+                                <th>Selasa
+                                    <br> 18:30 – 20:10</th>
+                                <th>Selasa
+                                    <br> 18:30 – 20:10</th>
+                                <th>Senin
+                                    <br> 18:30 – 20:10</th>
+                                <th>Sabtu
+                                    <br> 09:00 – 15:00</th>
                             </tr>
                             <tr>
                                 <th>Pertemuan 1</th>
-                                <td> 17 Maret 2018</td>
-                                <td> 17 Maret 2018</td>
-                                <td> 17 Maret 2018</td>
-                                <td> 17 Maret 2018</td>
-                                <td> 17 Maret 2018</td>
-                                <td> -</td>
-                                <td> 17 Maret 2018</td>
+                                <td> 22 Maret 2018</td>
+                                <td> 22 Maret 2018</td>
+                                <td> 21 Maret 2018</td>
+                                <td> 20 Maret 2018</td>
+                                <td> 20 Maret 2018</td>
+                                <td> 19 Maret 2018</td>
+                                <td rowspan="3" style="text-align: center;vertical-align: middle"> 7 April 2018</td>
                             </tr>
                             <tr>
                                 <th>Pertemuan 2</th>
-                                <td> 24 Maret 2018</td>
-                                <td> 24 Maret 2018</td>
-                                <td> 24 Maret 2018</td>
-                                <td> 24 Maret 2018</td>
-                                <td> 24 Maret 2018</td>
-                            
-                                <td>-</td>
-                                <td> 24 Maret 2018</td></tr>
+                                <td> 29 Maret 2018</td>
+                                <td> 29 Maret 2018</td>
+                                <td> 28 Maret 2018</td>
+                                <td> 27 Maret 2018</td>
+                                <td> 27 Maret 2018</td>
+                                <td> 26 Maret 2018</td>
+                            </tr>
                             <tr>
                                 <th>Pertemuan 3</th>
-                                <td> 7 April 2018</td>
-                                <td> 7 April 2018</td>
-                                <td> 7 April 2018</td>
-                                <td> 7 April 2018</td>
-                                <td> 7 April 2018</td>
-                                <td> 14 April 2018</td>
-                                <td> 7 April 2018</td>
-
+                                <td> 5 April 2018</td>
+                                <td> 5 April 2018</td>
+                                <td> 4 April 2018</td>
+                                <td> 3 April 2018</td>
+                                <td> 3 April 2018</td>
+                                <td> 2 April 2018</td>
                             </tr>
-                        
                             <tr>
                                 <th>Tempat</th>
-                                <td>D.2.L</td> 
                                 <td>D.2.A</td>
-                                <td>D.2.K</td>
-                                <td>D.2.L</td>
-                                <td>D.2.K</td>
+                                <td>D.3.L</td>
+                                <td>D.3.L</td>
+                                <td>D.3.L</td>
+                                <td>D.2.J</td>
+                                <td>D.3.L</td>
                                 <td>D.2.A</td>
-                                <td>D.2.A</td>
-
                             </tr>
-
                         </tbody>
                     </table>
                 </div>
@@ -1084,179 +1088,178 @@ Belajar HTML dan CSS dasar, Belajar menggunakan CSS Framework (Bootstrap)
     </section>
 
 
-    <section class="main-section alabaster" id="team">
-        <!--main-section team-start-->
-        <div class="container">
-            <h2>team</h2>
-            <h6>Take a closer look into our amazing team. We won’t bite.</h6>
-            <div class="team-leader-block clearfix">
-                <div class="team-leader-box">
-                    <div class="team-leader wow fadeInDown delay-03s">
-                        <div class="team-leader-shadow">
-                            <a href="#"></a>
-                        </div>
-                        <img src="{{ asset('images/rizki.jpg')}}" width="300px" alt="">
-                        <ul>
-                            <li>
-                                <a href="https://twitter.com/rzlnx" class="fa fa-twitter"></a>
-                            </li>
-                            <!-- <li><a href="https://facebook.com/rizki.mufti" class="fa fa-facebook"></a></li> -->
-                            <li>
-                                <a href="https://github.com/rizkimufti" class="fa fa-git"></a>
-                            </li>
-                            <li>
-                                <a href="https://instagram.com/rzlnx.id" class="fa fa-instagram"></a>
-                            </li>
-                        </ul>
+    <!--main-section team-start-->
+    <div class="container">
+        <h2>team</h2>
+        <h6>Take a closer look into our amazing team. We won’t bite.</h6>
+        <div class="team-leader-block clearfix">
+            <div class="team-leader-box">
+                <div class="team-leader wow fadeInDown delay-03s">
+                    <div class="team-leader-shadow">
+                        <a href="#"></a>
                     </div>
-                    <h3 class="wow fadeInDown delay-03s">Rizki Mufti Ilmawan</h3>
-                    <span class="wow fadeInDown delay-03s">Instruktur Web Programming</span>
+                    <img src="{{ asset('images/rizki.jpg')}}" width="300px" alt="">
+                    <ul>
+                        <li>
+                            <a href="https://twitter.com/rzlnx" class="fa fa-twitter"></a>
+                        </li>
+                        <!-- <li><a href="https://facebook.com/rizki.mufti" class="fa fa-facebook"></a></li> -->
+                        <li>
+                            <a href="https://github.com/rizkimufti" class="fa fa-git"></a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/rzlnx.id" class="fa fa-instagram"></a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="team-leader-box clearfix">
-                    <div class="team-leader  wow fadeInDown delay-06s">
-                        <div class="team-leader-shadow">
-                            <a href="#"></a>
-                        </div>
-                        <img src="{{ asset('images/farah.jpg')}}" width="300px" alt="">
-                        <ul>
-                            <li>
-                                <a href="#" class="fa fa-twitter"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-git"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-instagram"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <h3 class="wow fadeInDown delay-06s">Farah Luthfi Oktarina</h3>
-                    <span class="wow fadeInDown delay-06s">Instruktur Female Dev</span>
-                </div>
-
-                <div class="team-leader-box">
-                    <div class="team-leader  wow fadeInDown delay-06s">
-                        <div class="team-leader-shadow">
-                            <a href="#"></a>
-                        </div>
-                        <img src="{{asset('images/afti.jpeg')}}" width="300px" alt="">
-                        <ul>
-                            <li>
-                                <a href="#" class="fa fa-twitter"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-git"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-instagram"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <h3 class="wow fadeInDown delay-06s">Aftiani Wahyuastuti</h3>
-                    <span class="wow fadeInDown delay-06s">Instruktur Mobile Programming</span>
-                </div>
-
-
-                <div class="team-leader-box">
-                    <div class="team-leader  wow fadeInDown delay-06s">
-                        <div class="team-leader-shadow">
-                            <a href="#"></a>
-                        </div>
-                        <img src="{{ asset('images/okta.jpeg')}}" width="300px" alt="">
-                        <ul>
-                            <li>
-                                <a href="#" class="fa fa-twitter"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-git"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-instagram"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <h3 class="wow fadeInDown delay-06s">Okta Arif Cahyawan</h3>
-                    <span class="wow fadeInDown delay-06s">Instruktur Linux Fundamental</span>
-                </div>
-
-
-                <div class="team-leader-box">
-                    <div class="team-leader  wow fadeInDown delay-06s">
-                        <div class="team-leader-shadow">
-                            <a href="#"></a>
-                        </div>
-                        <img src="{{ asset('images/bayu.jpeg')}}" alt="">
-                        <ul>
-                            <li>
-                                <a href="#" class="fa fa-twitter"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-git"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa fa-instagram"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <h3 class="wow fadeInDown delay-06s">Muhammad Bayu Hermawan</h3>
-                    <span class="wow fadeInDown delay-06s">Instruktur Jaringan Komputer</span>
-                </div>
-
-
-
-
-
-                <div class="team-leader-box">
-                    <div class="team-leader wow fadeInDown delay-09s">
-                        <div class="team-leader-shadow">
-                            <a href="#"></a>
-                        </div>
-                        <img src="{{ asset('images/abas.jpeg')}}" alt="">
-                        <ul>
-                            <li>
-                                <a href="#" class="fa fa-twitter"></a>
-                            </li>
-                            <!-- <li><a href="https://facebook.com/" class="fa fa-facebook"></a></li> -->
-                            <li>
-                                <a href="https://github.com/" class="fa fa-git"></a>
-                            </li>
-                            <li>
-                                <a href="https://instagram.com/" class="fa fa-instagram"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <h3 class="wow fadeInDown delay-09s">Ahmad Basir</h3>
-                    <span class="wow fadeInDown delay-09s">Instruktur Multimedia Inkscape</span>
-                </div>
-
-
-                <div class="team-leader-box1">
-                    <center>
-
-                        <div class="team-leader  wow fadeInDown delay-06s">
-                            <div class="team-leader-shadow">
-                                <a href="#"></a>
-                            </div>
-                            <img src="{{ asset('images/reno.png')}}" width="300px" alt="">
-                            <ul>
-                                <li>
-                                    <a href="#" class="fa fa-twitter"></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fa fa-git"></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fa fa-instagram"></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="wow fadeInDown delay-06s">Reno Kurniawan</h3>
-                        <span class="wow fadeInDown delay-06s">Instruktur Game Development </span>
-                </div>
-
-
+                <h3 class="wow fadeInDown delay-03s">Rizki Mufti Ilmawan</h3>
+                <span class="wow fadeInDown delay-03s">Instruktur Web Programming</span>
             </div>
+            <div class="team-leader-box clearfix">
+                <div class="team-leader  wow fadeInDown delay-06s">
+                    <div class="team-leader-shadow">
+                        <a href="#"></a>
+                    </div>
+                    <img src="{{ asset('images/farah.jpg')}}" width="300px" alt="">
+                    <ul>
+                        <li>
+                            <a href="#" class="fa fa-twitter"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-git"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-instagram"></a>
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="wow fadeInDown delay-06s">Farah Luthfi Oktarina</h3>
+                <span class="wow fadeInDown delay-06s">Instruktur Female Dev</span>
+            </div>
+
+            <div class="team-leader-box">
+                <div class="team-leader  wow fadeInDown delay-06s">
+                    <div class="team-leader-shadow">
+                        <a href="#"></a>
+                    </div>
+                    <img src="{{asset('images/afti.jpeg')}}" width="300px" alt="">
+                    <ul>
+                        <li>
+                            <a href="#" class="fa fa-twitter"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-git"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-instagram"></a>
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="wow fadeInDown delay-06s">Aftiani Wahyuastuti</h3>
+                <span class="wow fadeInDown delay-06s">Instruktur Mobile Programming</span>
+            </div>
+
+
+            <div class="team-leader-box">
+                <div class="team-leader  wow fadeInDown delay-06s">
+                    <div class="team-leader-shadow">
+                        <a href="#"></a>
+                    </div>
+                    <img src="{{ asset('images/okta.jpeg')}}" width="300px" alt="">
+                    <ul>
+                        <li>
+                            <a href="#" class="fa fa-twitter"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-git"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-instagram"></a>
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="wow fadeInDown delay-06s">Okta Arif Cahyawan</h3>
+                <span class="wow fadeInDown delay-06s">Instruktur Linux Fundamental</span>
+            </div>
+
+
+            <div class="team-leader-box">
+                <div class="team-leader  wow fadeInDown delay-06s">
+                    <div class="team-leader-shadow">
+                        <a href="#"></a>
+                    </div>
+                    <img src="{{ asset('images/bayu.jpeg')}}" alt="">
+                    <ul>
+                        <li>
+                            <a href="#" class="fa fa-twitter"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-git"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-instagram"></a>
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="wow fadeInDown delay-06s">Muhammad Bayu Hermawan</h3>
+                <span class="wow fadeInDown delay-06s">Instruktur Jaringan Komputer</span>
+            </div>
+
+
+
+
+
+            <div class="team-leader-box">
+                <div class="team-leader wow fadeInDown delay-09s">
+                    <div class="team-leader-shadow">
+                        <a href="#"></a>
+                    </div>
+                    <img src="{{ asset('images/abas.jpeg')}}" alt="">
+                    <ul>
+                        <li>
+                            <a href="#" class="fa fa-twitter"></a>
+                        </li>
+                        <!-- <li><a href="https://facebook.com/" class="fa fa-facebook"></a></li> -->
+                        <li>
+                            <a href="https://github.com/" class="fa fa-git"></a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/" class="fa fa-instagram"></a>
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="wow fadeInDown delay-09s">Ahmad Basir</h3>
+                <span class="wow fadeInDown delay-09s">Instruktur Multimedia Inkscape</span>
+            </div>
+
+
+            <div class="team-leader-box1">
+                <center>
+
+                    <div class="team-leader  wow fadeInDown delay-06s">
+                        <div class="team-leader-shadow">
+                            <a href="#"></a>
+                        </div>
+                        <img src="{{ asset('images/reno.png')}}" width="300px" alt="">
+                        <ul>
+                            <li>
+                                <a href="#" class="fa fa-twitter"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fa fa-git"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fa fa-instagram"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="wow fadeInDown delay-06s">Reno Kurniawan</h3>
+                    <span class="wow fadeInDown delay-06s">Instruktur Game Development </span>
+            </div>
+
+
         </div>
+    </div>
 
     </section>
 
@@ -1295,8 +1298,7 @@ Belajar HTML dan CSS dasar, Belajar menggunakan CSS Framework (Bootstrap)
                     <div class="contact-info-box phone clearfix">
                         <h3>
                             <i class=""></i>Phone</h3>
-                        <span>:
-                             - 085225779549 (Dian Arima)
+                        <span>: - 085225779549 (Dian Arima)
                             <br> &nbsp - 087700058738 (Dinia Kurnia)
 
                         </span>
