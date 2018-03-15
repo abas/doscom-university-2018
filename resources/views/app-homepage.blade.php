@@ -1090,7 +1090,7 @@
 
     <!--main-section team-start-->
     <div class="container">
-        <h2>team</h2>
+        <h2 style="margin-top:50px">team</h2>
         <h6>Take a closer look into our amazing team. We won’t bite.</h6>
         <div class="team-leader-block clearfix">
             <div class="team-leader-box">
