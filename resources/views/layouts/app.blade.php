@@ -11,9 +11,11 @@
 
     <title>DOSCOM | DU 2018</title>
 
+    <link rel="stylesheet" href="{{asset('css/cus-datatable.css')}}">
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    
+
     <!-- material -->
     <link href="{{ asset('assetmaterial/css/bootstrap-material-design.min.css') }}" rel="stylesheet">
 
@@ -21,7 +23,7 @@
     <!-- Material Design fonts -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<!--     
+    <!--     
     <link href="asset/css/bootstrap.min.css" rel="stylesheet">
     <link href="asset/css/main.css" rel="stylesheet">
     <link href="assetmaterial/css/bootstrap-material-design.min.css" rel="stylesheet">
@@ -72,31 +74,25 @@
                         <li>
                             <a href="{{ route('login') }}">Login</a>
                         </li>
-                        <li>
-                            <a href="{{ route('register') }}">Register</a>
-                        </li>
                         @else
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                {{ Auth::user()->name }}
-                                <span class="caret"></span>
-                            </a>
+                        <li>
+                            <a href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+                                {{ Auth::user()->name }} </a>
 
-                            <ul class="dropdown-menu" role="menu">
-                                <li>
-                                    <a href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        Logout
-                                    </a>
+                            <li>
+                                <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        {{ csrf_field() }}
-                                    </form>
-                                </li>
-                                <li>
-                                    <a href="{{route('dashboard')}}">Dasboard</a>
-                                </li>
-                            </ul>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            </li>
+                            <li>
+                                <a href="{{route('dashboard')}}">Dasboard</a>
+                            </li>
+
                         </li>
                         @endif
                     </ul>
@@ -113,17 +109,28 @@
         </p>
     </div>
 
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js'></script>
 
-    <!-- script onload -->
-    <script>
-        $(document).ready(function () {
-            $('#example').DataTable();
-        });
-    </script>
+    <script src="{{asset('js/cus-datatable.js')}}"></script>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script>
+        $(function () {
+            $('.hiddensearch').slideDown();
+        });
 
+        $(function () {
+            var label = document.getElementsByTagName("LABEL")[0];
+            if(label.id == "email"){
+                // 
+            }else{
+                document.getElementsByTagName("LABEL")[0].style.width = "100%";
+            }
+        });
+    </script>
+    <!-- <script src="{{ asset('js/app.js') }}"></script> -->
 
 </body>
 
