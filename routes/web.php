@@ -65,3 +65,4 @@ Route::post('/daftar','PesertaController@postDaftar')->name('postDaftar');
 
 Route::get('peserta/863476gf437f39f7384t6f3746ft6836f47/info','PesertaController@getInformation')->name('get-informasi-peserta');
 Route::post('peserta/98624gf796t4g7962gft47962gtf726g/info','PesertaController@postInformation')->name('post-informasi-peserta');
+Route::get('peserta/98624gf796{peserta_id}t4g7962gft47962gtf726g/info','PesertaController@showInformation')->name('show-info');
