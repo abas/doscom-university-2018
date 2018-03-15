@@ -185,7 +185,7 @@ $(document).ready(function() {
     "oLanguage": {
       "sStripClasses": "",
       "sSearch": "",
-      "sSearchPlaceholder": "Enter Keywords Here",
+      "sSearchPlaceholder": "Cari Peserta Disini",
       "sInfo": "_START_ -_END_ of _TOTAL_",
       "sLengthMenu": '<span>Rows per page:</span><select class="browser-default">' +
         '<option value="10">10</option>' +
