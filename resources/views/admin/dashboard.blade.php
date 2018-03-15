@@ -83,16 +83,7 @@
         <div id="admin" class="col-md-12">
             <div class="card material-table">
                 <div class="table-header">
-                    <span class="table-title">Material Datatable</span>
-                    <div class="actions">
-                        <a class="modal-trigger waves-effect btn-flat nopadding">
-                            <i class="material-icons">person_add</i>
-                        </a>
-                            
-                        <a class="search-toggle waves-effect btn-flat nopadding">
-                            <i class="material-icons">search</i>
-                        </a>
-                    </div>
+                    <span class="table-title">Total Semua Peserta : <b>{{$peserta->count()}}</b></span>
                 </div>
                 <table id="datatable" style="width:100%">
                     <thead>
