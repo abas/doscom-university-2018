@@ -25,8 +25,12 @@
                 <div class="panel-heading" class="bg-info">
                     <b>
                         <h3 style="text-transform:capitalize">{{$kelas->nama}}
-                            <a style="text-align:right;" href="{{route('plusCounter',$kelas->id)}}" class="btn btn-raised btn-sm btn-success"><b>+</b></a>
-                            <a style="text-align:right;" href="{{route('minCounter',$kelas->id)}}" class="btn btn-raised btn-sm btn-warning"><b>-</b></a>
+                            <a style="text-align:right;" href="{{route('plusCounter',$kelas->id)}}" class="btn btn-raised btn-sm btn-success">
+                                <b>+</b>
+                            </a>
+                            <a style="text-align:right;" href="{{route('minCounter',$kelas->id)}}" class="btn btn-raised btn-sm btn-warning">
+                                <b>-</b>
+                            </a>
                         </h3>
                     </b>
                 </div>
@@ -57,13 +61,16 @@
                 </div>
                 <div class="panel-body">
                     <p>
-                        lunas : <b>{{$lunas}}</b>
+                        lunas :
+                        <b>{{$lunas}}</b>
                     </p>
                     <p>
-                        belum lunas : <b>{{$peserta->count() - $lunas}}</b>
+                        belum lunas :
+                        <b>{{$peserta->count() - $lunas}}</b>
                     </p>
                     <p>
-                        total terkumpul : <b>{{$total_uang_tekumpul}}</b>
+                        total terkumpul :
+                        <b>{{$total_uang_tekumpul}}</b>
                     </p>
                 </div>
             </div>
@@ -73,92 +80,99 @@
     <br>
     <br>
     <div class="row">
-        <div class="col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3>Peserta | total : <b>{{$peserta->count()}}</b></h3>
+        <div id="admin" class="col-md-12">
+            <div class="card material-table">
+                <div class="table-header">
+                    <span class="table-title">Material Datatable</span>
+                    <div class="actions">
+                        <a class="modal-trigger waves-effect btn-flat nopadding">
+                            <i class="material-icons">person_add</i>
+                        </a>
+                            
+                        <a class="search-toggle waves-effect btn-flat nopadding">
+                            <i class="material-icons">search</i>
+                        </a>
+                    </div>
                 </div>
-                <div class="panel-body">
+                <table id="datatable" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th width="10%">Nama</th>
+                            <th width="20%">Email</th>
+                            <!-- <th>NoHp</th> -->
+                            <!-- <th>Status</th> -->
+                            <th width="20%">Transaksi</th>
+                            <th width="12%">Status Pembayaran</th>
+                            <th>Kelas</th>
+                            <th width="5%">Action</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Email</th>
+                            <!-- <th>NoHp</th> -->
+                            <!-- <th>Status</th> -->
+                            <th>Transaksi</th>
+                            <th>Status Pembayaran</th>
+                            <th>Kelas</th>
+                            <th>Action</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        @if($peserta->count() > 0) @foreach($peserta as $peserta)
+                        <tr id="@php $nametag=strtolower($peserta->nama); @endphp{{$nametag}}">
+                            <td>{{$peserta->nama}}</td>
+                            <td>{{$peserta->email}}</td>
+                            <!-- <td>{{$peserta->nohp}}</td> -->
+                            <!-- <td>{{$peserta->status_peserta}}</td> -->
+                            <td>
+                                <b>[ tot ]</b> Rp {{$peserta->total_pembayaran}}
+                                <br>
+                                <b>[ kekurangan ]</b> Rp {{$peserta->kekurangan_pembayaran}}
+                            </td>
+                            <td>
 
-                    <table id="table-participant" class="data-table table table-striped table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Nama</th>
-                                <th>Email</th>
-                                <th>NoHp</th>
-                                <th>Status</th>
-                                <th>Transaksi</th>
-                                <th>Status Pembayaran</th>
-                                <th>Kelas</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tfoot>
-                            <tr>
-                                <th>Nama</th>
-                                <th>Email</th>
-                                <th>NoHp</th>
-                                <th>Status</th>
-                                <th>Transaksi</th>
-                                <th>Status Pembayaran</th>
-                                <th>Kelas</th>
-                                <th>Action</th>
-                            </tr>
-                        </tfoot>
-                        <tbody>
-                            @if($peserta->count() > 0) @foreach($peserta as $peserta)
-                            <tr id="@php $nametag=strtolower($peserta->nama); @endphp{{$nametag}}">
-                                <td>{{$peserta->nama}}</td>
-                                <td>{{$peserta->email}}</td>
-                                <td>{{$peserta->nohp}}</td>
-                                <td>{{$peserta->status_peserta}}</td>
-                                <td>
-                                    <b>[ tot ]</b> Rp {{$peserta->total_pembayaran}}
-                                    <br>
-                                    <b>[ kekurangan ]</b> Rp {{$peserta->kekurangan_pembayaran}}
-                                </td>
-                                <td>
-
-                                    @if($peserta->status_pembayaran != 'lunas')
-                                    <a href="{{route('pelunasan',$peserta->id)}}" class="btn btn-sm btn-warning">
-                                        {{$peserta->status_pembayaran}}
-                                    </a>
-                                    @else
-                                    <p href="" class="btn btn-sm btn-success">
-                                        {{$peserta->status_pembayaran}}
-                                    </p>
-                                    @endif
-                                </td>
-                                <td>
-                                    @foreach(\App\Peserta::getKelas($peserta->id) as $kelas) @if($peserta->status_pembayaran != 'lunas')
-                                    <p class="btn btn-sm btn-raised btn-danger">
-                                        {{$kelas}}
-                                    </p>
-                                    @else
-                                    <p class="btn btn-raised btn-sm btn-success">
-                                        {{$kelas}}
-                                    </p>
-                                    @endif @endforeach
-                                </td>
-                                <td>
-                                    <a href="{{route('delete-peserta',$peserta->id)}}" class="btn btn-sm btn-raised btn-danger"><b>X</b></a>
-                                </td>
-                            </tr>
-                            @endforeach @else
-                            <tr>
-                                <td colspan="8">
-                                    <p class="alert" style="color:#FF0034" align="center">
-                                        Tidak Ada Data Ditemukan
-                                    </p>
-                                </td>
-                            </tr>
-                            @endif
-                        </tbody>
-                    </table>
-                </div>
+                                @if($peserta->status_pembayaran != 'lunas')
+                                <a href="{{route('pelunasan',$peserta->id)}}" class="btn btn-sm btn-warning">
+                                    {{$peserta->status_pembayaran}}
+                                </a>
+                                @else
+                                <p href="" class="btn btn-sm btn-success">
+                                    {{$peserta->status_pembayaran}}
+                                </p>
+                                @endif
+                            </td>
+                            <td>
+                                @foreach(\App\Peserta::getKelas($peserta->id) as $kelas) @if($peserta->status_pembayaran != 'lunas')
+                                <p class="btn btn-sm btn-raised btn-danger">
+                                    {{$kelas}}
+                                </p>
+                                @else
+                                <p class="btn btn-raised btn-sm btn-success">
+                                    {{$kelas}}
+                                </p>
+                                @endif @endforeach
+                            </td>
+                            <td style="width:5%">
+                                <a href="{{route('delete-peserta',$peserta->id)}}" class="btn btn-sm btn-raised btn-danger">
+                                    <b>X</b>
+                                </a>
+                            </td>
+                        </tr>
+                        @endforeach @else
+                        <tr>
+                            <td colspan="8">
+                                <p class="alert" style="color:#FF0034" align="center">
+                                    Tidak Ada Data Ditemukan
+                                </p>
+                            </td>
+                        </tr>
+                        @endif
+                    </tbody>
+                </table>
             </div>
         </div>
-
     </div>
 </div>
 @endsection
