@@ -284,7 +284,14 @@ class PesertaController extends Controller
             return redirect()->back()->with('iseng','email yang anda cari belum terdaftar');
             // return ['msg'=>'email tidak terdaftar'];
         }
+        return redirect()->route('show-info',$peserta->id);
+    }
+    
+    public function showInformation($peserta_id)
+    {
+        $peserta = Peserta::find($peserta_id);
         $kelas = Kelas::PgetKelas($peserta);
+        // return $peserta;
         return view('peserta.detail-peserta',compact('peserta','kelas')); 
     }
 }
