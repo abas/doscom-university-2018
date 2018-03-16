@@ -9,14 +9,17 @@
                             Peserta</h1>
             </div>
         </div>
+        <br>
         <div class="card-body text-center">
             <div class="row">
 
                 <div id="admin" class="col-md-12">
                     <div class="card material-table">
-                        <div class="table-header">
-                            <span class="table-title">Total Semua Peserta : {{$peserta->count()}}
-                                <b></b>
+                        <div style="" class="table-header">
+                            <span class="table-title" style="margin-top:20px">Total Semua Peserta : {{$peserta->count()}}
+                                <a style="text-align:right" href="{{route('semuanomor')}}" class="btn btn-sm btn-raised btn-info">
+                                    getAllNoHp
+                                </a>
                             </span>
                         </div>
                         <table id="datatable" style="width:100%">
