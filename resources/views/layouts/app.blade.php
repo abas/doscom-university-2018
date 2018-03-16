@@ -92,7 +92,9 @@
                             <li>
                                 <a href="{{route('dashboard')}}">Dasboard</a>
                             </li>
-
+                            <li>
+                                <a href="{{route('humasdata')}}">Humas</a>
+                            </li>
                         </li>
                         @endif
                     </ul>
