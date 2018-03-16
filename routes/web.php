@@ -58,6 +58,11 @@ Route::group([
     // must admin
     Route::post('/peserta/{id}/bayar','PesertaController@pembayaran')->name('pembayaran');
     Route::get('/semua-kelas','KelasController@semuaKelas')->name('semua-kelas');
+
+    // kontak humas
+    Route::get('/humasdata','DashboardController@humasdata')->name('humasdata');
+    Route::get('/humasdata/semuanomor','DashboardController@getNomorAll')->name('semuanomor');
+
 });
 
 Route::get('/daftar','PesertaController@getDaftar')->name('getDaftar');
