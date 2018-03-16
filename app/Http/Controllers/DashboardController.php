@@ -47,8 +47,8 @@ class DashboardController extends Controller
     public function humasdata()
     {
         $peserta = Peserta::all()->where('status_pembayaran','lunas');
-        return $peserta;
-        // return view('admin.humas-data',compact('peserta'));
+        // return $peserta;
+        return view('admin.humas-data',compact('peserta'));
     }
 
     public function getNomorAll()
