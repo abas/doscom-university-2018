@@ -80,6 +80,12 @@
                                 {{ Auth::user()->name }} </a>
 
                             <li>
+                                <a href="{{route('dashboard')}}">Dasboard</a>
+                            </li>
+                            <li>
+                                <a href="{{route('humasdata')}}">Humas</a>
+                            </li>
+                            <li>
                                 <a href="{{ route('logout') }}" onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">
                                     Logout
@@ -88,12 +94,6 @@
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     {{ csrf_field() }}
                                 </form>
-                            </li>
-                            <li>
-                                <a href="{{route('dashboard')}}">Dasboard</a>
-                            </li>
-                            <li>
-                                <a href="{{route('humasdata')}}">Humas</a>
                             </li>
                         </li>
                         @endif
@@ -125,9 +125,9 @@
 
         $(function () {
             var label = document.getElementsByTagName("LABEL")[0];
-            if(label.id == "email"){
+            if (label.id == "email") {
                 // 
-            }else{
+            } else {
                 document.getElementsByTagName("LABEL")[0].style.width = "100%";
             }
         });
