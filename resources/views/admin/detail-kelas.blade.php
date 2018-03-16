@@ -38,6 +38,7 @@
                             </tfoot>
                             <tbody>
                                 @foreach($peserta as $peserta)
+                                @if($peserta->status_pembayaran == 'lunas')
                                 <tr style="text-align:left">
                                     <td>{{$peserta->nama}}</td>
                                     <td>{{$peserta->email}}</td>
@@ -48,6 +49,7 @@
                                         </a>
                                     </td>
                                 </tr>
+                                @endif
                                 @endforeach
                             </tbody>
                         </table>
