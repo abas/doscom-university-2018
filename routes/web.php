@@ -74,5 +74,5 @@ Route::get('peserta/98624gf796{peserta_id}t4g7962gft47962gtf726g/info','PesertaC
 
 
 Route::group(['prefix'=>'api','middleware'=>['auth','admin']],function(){
-    Route::get('/getnumbers','DashboardController@getNomorAll');
+    Route::get('/getnumbers','DashboardController@getNomorAllCount');
 });
