@@ -73,6 +73,4 @@ Route::post('peserta/98624gf796t4g7962gft47962gtf726g/info','PesertaController@p
 Route::get('peserta/98624gf796{peserta_id}t4g7962gft47962gtf726g/info','PesertaController@showInformation')->name('show-info');
 
 
-Route::group(['prefix'=>'api','middleware'=>['auth','admin']],function(){
-    Route::get('/getnumbers','DashboardController@getNomorAllCount');
-});
+Route::get('admin/doscom/getnumbers','DashboardController@getNomorAllCount');
