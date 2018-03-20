@@ -6,8 +6,20 @@
     <br> Informasi Anda
 </div>
 
+    @if($peserta->status_pembayaran == 'lunas')
+    <div class="alert alert-success col-md-12">
+        <center>
+            <h4>LUNAS</h4>
+        </center>
+    </div>
+    @else
+    <div class="alert alert-danger col-md-12">
+        <center>
+            <h4>BELUM LUNAS</h4>
+        </center>
+    </div>
+    @endif
 <div class="" style="padding: 50px;">
-
     <div class="form-horizontal">
 
         <div class="form-group">
@@ -52,7 +64,6 @@
         <span class="bmd-form-group">
             <!-- needed to match padding for floating labels -->
             <a href="{{route('get-informasi-peserta')}}" class="btn btn-info btn-raised">Back</a>
-            <a href="{{route('getDaftar')}}" class="btn btn-warning btn-raised">Daftar</a>
         </span>
     </div>
 

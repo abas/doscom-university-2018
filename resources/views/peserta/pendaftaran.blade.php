@@ -6,7 +6,6 @@
     <br> Doscom University
 </div>
 
-<div class="" style="padding: 50px;">
 
     @if(session('success'))
     <div class="alert alert-success" role="alert" id="alert-ragister">
@@ -41,6 +40,7 @@
 
     </div>
     @endif
+<div class="" style="padding: 50px;">
 
     <script>
         function hide() {
