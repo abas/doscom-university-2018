@@ -742,7 +742,8 @@
             </ul>
             <!-- <a class="link animated fadeInUp delay-1s servicelink" href="#service">Get Started</a> -->
 
-            <a href="#service" class="btn btn-info btn-raised btn-lg">Get Started</a>
+            <a href="#service" class="btn btn-info btn-raised">Get Started</a>
+            <a href="{{route('get-informasi-peserta')}}" class="btn btn-success btn-raised">Check Status</a>
         </div>
     </header>
     <!--header-end-->
