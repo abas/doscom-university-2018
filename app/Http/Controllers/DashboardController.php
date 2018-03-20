@@ -60,4 +60,10 @@ class DashboardController extends Controller
             echo '<br>';
         }
     }
+
+    public function getNomorAllCount()
+    {
+        $peserta = Peserta::all()->where('status_pembayaran','lunas');
+        return $peserta->count();
+    }
 }
